@@ -1,0 +1,2 @@
+- generate new file for create new blog post
+  - create new file in folder blogs with name blog-title.html
