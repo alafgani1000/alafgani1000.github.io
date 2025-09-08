@@ -90,7 +90,7 @@ class NavComponent extends HTMLElement {
 
 class FooterComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<footer></footer>`;
+    this.innerHTML = `<footer class="mt-4"></footer>`;
   }
 }
 
