@@ -120,7 +120,10 @@ class NavComponent extends HTMLElement {
   connectedCallback() {
     const home = this.getAttribute("home") || "index.html";
     const blog = this.getAttribute("blog") || "blog.html";
-    this.updateContent(home, blog);
+    const project = this.getAttribute("project") || "project.html";
+    const theme = this.getAttribute("theme") || "theme.html";
+    const contact = this.getAttribute("contact") || "contact.html";
+    this.updateContent(home, blog, project, theme, contact);
   }
 }
 
