@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://tenggoo.my.id/sitemap.xml
