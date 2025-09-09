@@ -54,24 +54,12 @@
           <div class="col-lg-7 col-md-8 mx-3">
             <div class="justify row" id="intro">
               <div class="mx-auto rounded me-bg-primary">
-                <div class="title-description py-3 text-center">
-                  <h2 class="">Lorem Ipsum Title App</h2>
-                </div>
-              </div>
-            </div>
-
-            <div class="justify row mt-2" id="intro">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div class="title-description mx-4 mt-3">
-                  <h3 class="">Lorem Ipsum Introduction App</h3>
-                </div>
-                <div class="text-description m-4">
+                <div class="title-description py-3">
+                  <h2 class="text-center">Intro</h2>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    News App, aplikasi untuk membuat web, blog atau berita.
+                    aplikasi ini dibuat menggunakan bahasa pemrograman php lebih
+                    spesifiknya menggunakan framework laravel.
                   </p>
                 </div>
               </div>
@@ -108,45 +96,18 @@
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                       <img
-                        src="../assets/images/1.png"
+                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/home.png"
                         class="d-block w-100"
                         alt="..."
                       />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>
-                          Some representative placeholder content for the first
-                          slide.
-                        </p>
-                      </div>
                     </div>
+                    <!-- slide 2 -->
                     <div class="carousel-item" data-bs-interval="2000">
                       <img
-                        src="../assets/images/2.png"
+                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/detail.png"
                         class="d-block w-100"
                         alt="..."
                       />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>
-                          Some representative placeholder content for the second
-                          slide.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="../assets/images/4.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>
-                          Some representative placeholder content for the third
-                          slide.
-                        </p>
-                      </div>
                     </div>
                   </div>
                   <button
@@ -180,23 +141,75 @@
             <div class="justify row mt-4" id="instalasi">
               <div class="mx-auto p-4 rounded me-bg-primary">
                 <div class="title-description mx-4 mt-3">
-                  <h3 class="">Lorem Ipsum Instalasi App</h3>
+                  <h3 class="">Instalasi App</h3>
                 </div>
                 <div class="text-description m-4">
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="image-cover m-4">
-                  <img
-                    alt=""
-                    src="../assets/images/4.png"
-                    class="img-fluid rounded"
-                  />
+                  Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
+                  GitHub:
+                  <ol>
+                    <li>
+                      Buka command promp, atau yang lainnya. arahkan ke
+                      direktory aplikasi akan di simpan
+                    </li>
+                    <li>
+                      Kloning Repositori: Gunakan perintah git clone untuk
+                      mengunduh kode sumber dari GitHub.
+                      <a href="https://github.com/alafgani1000/news_app"
+                        >Link repository</a
+                      >
+                    </li>
+
+                    <li>
+                      Arahkan ke Direktori Proyek: Masukkan folder proyek
+                      menggunakan cd nama-folder.
+                    </li>
+
+                    <li>
+                      Instal Dependensi: Jalankan <b>composer install</b> untuk
+                      menginstal semua dependensi yang diperlukan.
+                    </li>
+
+                    <li>copy .env.example ganti nama dengan .env</li>
+
+                    <li>
+                      Konfigurasi File .env: Perbarui pengaturan basis data,
+                      termasuk nama basis data, nama pengguna, dan kata sandi.
+                    </li>
+
+                    <li>
+                      Buat Kunci Aplikasi: Jalankan
+                      <b>php artisan key:generate</b>
+                      untuk membuat kunci aplikasi yang unik.
+                    </li>
+
+                    <li>
+                      Buat Basis Data: Siapkan basis data baru yang sesuai
+                      dengan nama yang ditentukan dalam file .env.
+                    </li>
+
+                    <li>
+                      Jalankan Migrasi Basis Data: Gunakan
+                      <b>php artisan migrate</b>
+                      untuk membuat tabel yang diperlukan dalam basis data.
+                    </li>
+
+                    <li>
+                      Jalankan perintah <b>php artisan db:seed</b> untuk input
+                      aturan awal.
+                    </li>
+
+                    <li>Jalankan perintah npm run dev atau yarn dev.</li>
+
+                    <li>
+                      Mulai Server Laravel: Luncurkan server dengan php artisan
+                      serve dan akses aplikasi di http://localhost:8000.
+                    </li>
+
+                    <li>
+                      Silakan masuk dengan nama pengguna dan kata sandi di
+                      UserSeeder.
+                    </li>
+                  </ol>
                 </div>
                 <div class="text-description"></div>
               </div>
