@@ -39,7 +39,37 @@ class HeaderComponent extends HTMLElement {
 }
 
 class NavComponent extends HTMLElement {
-  connectedCallback() {
+  constructor() {
+    super();
+  }
+
+  static get observedAttributes() {
+    return ["home", "blog", "project", "theme", "contact"];
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (name === "home" && newValue) {
+      this.home = newValue;
+    }
+
+    if (name === "blog" && newValue) {
+      this.blog = newValue;
+    }
+
+    if (name === "project" && newValue) {
+      this.project = newValue;
+    }
+
+    if (name === "theme" && newValue) {
+      this.theme = newValue;
+    }
+
+    if (name === "contact" && newValue) {
+      this.contact = newValue;
+    }
+  }
+
+  updateContent(home, blog, project, theme, contact) {
     this.innerHTML = ` <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <button
@@ -59,25 +89,25 @@ class NavComponent extends HTMLElement {
           >
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-normal">
               <li clas="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
+                <a class="nav-link active" aria-current="page" href=${home}
                   >Home</a
                 >
               </li>
                 <li clas="nav-item">
-                <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                <a class="nav-link" aria-current="page" href=${blog}>Blog</a>
               </li>
               <li clas="nav-item">
-                <a class="nav-link" aria-current="page" href="project.html"
+                <a class="nav-link" aria-current="page" href=${project}
                   >App Project</a
                 >
               </li>
               <li clas="nav-item">
-                <a class="nav-link" aria-current="page" href="theme.html"
+                <a class="nav-link" aria-current="page" href=${theme}
                   >Theme Project</a
                 >
               </li>
               <li clas="nav-item">
-                <a class="nav-link" aria-current="page" href="contact.html"
+                <a class="nav-link" aria-current="page" href=${contact}
                   >Contact</a
                 >
               </li>
@@ -85,6 +115,12 @@ class NavComponent extends HTMLElement {
           </div>
         </div>
       </nav>`;
+  }
+
+  connectedCallback() {
+    const home = this.getAttribute("home") || "index.html";
+    const blog = this.getAttribute("blog") || "blog.html";
+    this.updateContent(home, blog);
   }
 }
 
