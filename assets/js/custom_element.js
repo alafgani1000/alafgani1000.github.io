@@ -63,25 +63,25 @@ class NavComponent extends HTMLElement {
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-normal">
-              <li clas="nav-item">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href=${home}
                   >Home</a
                 >
               </li>
-                <li clas="nav-item">
+                <li class="nav-item">
                 <a class="nav-link" aria-current="page" href=${blog}>Blog</a>
               </li>
-              <li clas="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href=${project}
                   >App Project</a
                 >
               </li>
-              <li clas="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href=${theme}
                   >Theme Project</a
                 >
               </li>
-              <li clas="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" aria-current="page" href=${contact}
                   >Contact</a
                 >
