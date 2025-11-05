@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Teng Gooo: News app</title>
+    <title>Teng Gooo: quiz app</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -45,6 +45,7 @@
             <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
               <ul>
                 <li><a href="#intro">Intro</a></li>
+                <li><a href="#kebutuhan">Kebutuhan</a></li>
                 <li><a href="#instalasi">Instalasi</a></li>
                 <li><a href="#">Panduan Pengguna</a></li>
                 <!-- <li><a href="#">Credit</a></li> -->
@@ -57,9 +58,13 @@
                 <div class="title-description py-3">
                   <h2 class="text-center">Intro</h2>
                   <p>
-                    News App, aplikasi untuk membuat web, blog atau berita.
-                    aplikasi ini dibuat menggunakan bahasa pemrograman php lebih
-                    spesifiknya menggunakan framework laravel.
+                    Quiz App, aplikasi untuk management quiz, aplikasi ini di
+                    buat dengan bahasa pemrograman php lebih spesifik lagi
+                    framework laravel. dengan fitur seperti membuat membuat
+                    quiz, membuat pertanyaan, membuat jawaban lalu mempublish ke
+                    halaman utama. sehingga semua orang bisa mengakses dan
+                    mengikuti quiz dengan syarat mereka harus mendaftar terlebih
+                    dahulu.
                   </p>
                 </div>
               </div>
@@ -92,21 +97,57 @@
                       data-bs-slide-to="2"
                       aria-label="Slide 3"
                     ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    ></button>
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
                       <img
-                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/home.png"
+                        src="../assets/images/quiz/home.png"
                         class="d-block w-100"
-                        alt="..."
+                        alt="halaman utama quiz"
                       />
                     </div>
                     <!-- slide 2 -->
                     <div class="carousel-item" data-bs-interval="2000">
                       <img
-                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/detail.png"
+                        src="../assets/images/quiz/quiz_session.png"
                         class="d-block w-100"
-                        alt="..."
+                        alt="halaman quiz"
+                      />
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="../assets/images/quiz/result_quiz.png"
+                        class="d-block w-100"
+                        alt="quiz result"
+                      />
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="../assets/images/quiz/quiz.png"
+                        class="d-block w-100"
+                        alt="admin manage quiz"
+                      />
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="carousel-item" data-bs-interval="2000">
+                      <img
+                        src="../assets/images/quiz/question.png"
+                        class="d-block w-100"
+                        alt="admin manage question"
                       />
                     </div>
                   </div>
@@ -138,6 +179,25 @@
               </div>
             </div>
 
+            <div class="justify row mt-4" id="kebutuhan">
+              <div class="mx-auto p-4 rounded me-bg-primary">
+                <div class="title-description mx-4 mt-3">
+                  <h3 class="">Kebutuhan Aplikasi</h3>
+                </div>
+                <div class="text-description m-4">
+                  <ul>
+                    <li>PHP ^8.1</li>
+                    <li>Composer 2</li>
+                    <li>Node.js 20+</li>
+                    <li>NPM 10+</li>
+                    <li>Mysql</li>
+                    <li>Redis Server</li>
+                    <li>Web Server (Apache, Nginx, etc.)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
             <div class="justify row mt-4" id="instalasi">
               <div class="mx-auto p-4 rounded me-bg-primary">
                 <div class="title-description mx-4 mt-3">
@@ -148,61 +208,52 @@
                   GitHub:
                   <ol>
                     <li>
-                      Buka command promp, atau yang lainnya. arahkan ke
-                      direktory aplikasi akan di simpan
-                    </li>
-                    <li>
-                      Kloning Repositori: Gunakan perintah git clone untuk
-                      mengunduh kode sumber dari GitHub.
-                      <a href="https://github.com/alafgani1000/news_app"
-                        >Link repository</a
+                      Clone dari Repositori
+                      <br />
+                      <code
+                        >git clone
+                        https://github.com/kuis-tech/quiz-app.git</code
                       >
                     </li>
-
                     <li>
-                      Arahkan ke Direktori Proyek: Masukkan folder proyek
-                      menggunakan cd nama-folder.
+                      Arahkan ke Direktori Proyek, apabila menggunakan command
+                      prompt gunakan perintah cd nama-folder.
                     </li>
-
-                    <li>
-                      Instal Dependensi: Jalankan <b>composer install</b> untuk
-                      menginstal semua dependensi yang diperlukan.
-                    </li>
-
                     <li>copy .env.example ganti nama dengan .env</li>
-
                     <li>
-                      Konfigurasi File .env: Perbarui pengaturan basis data,
-                      termasuk nama basis data, nama pengguna, dan kata sandi.
+                      Konfigurasi File .env, sesuaikan pengaturan database
+                      seperti nama basis data, nama pengguna, dan kata sandi.
+                    </li>
+                    <li>
+                      Jalankan command <code>composer install</code> dan
+                      <code>npm install</code> untuk menginstal semua dependensi
+                      yang diperlukan.
+                    </li>
+                    <li>
+                      Jalankan command <code>php artisan key:generate</code>
                     </li>
 
                     <li>
-                      Buat Kunci Aplikasi: Jalankan
-                      <b>php artisan key:generate</b>
-                      untuk membuat kunci aplikasi yang unik.
+                      Siapkan basis data baru yang sesuai dengan nama yang
+                      ditentukan dalam file .env.
+                    </li>
+
+                    <li>Jalankan command <code>php artisan migrate</code></li>
+
+                    <li>
+                      Jalankan perintah <code>php artisan db:seed</code> untuk
+                      input aturan awal.
                     </li>
 
                     <li>
-                      Buat Basis Data: Siapkan basis data baru yang sesuai
-                      dengan nama yang ditentukan dalam file .env.
+                      Jalankan perintah <code>npm run dev</code> atau
+                      <code>yarn dev.</code>
                     </li>
 
                     <li>
-                      Jalankan Migrasi Basis Data: Gunakan
-                      <b>php artisan migrate</b>
-                      untuk membuat tabel yang diperlukan dalam basis data.
-                    </li>
-
-                    <li>
-                      Jalankan perintah <b>php artisan db:seed</b> untuk input
-                      aturan awal.
-                    </li>
-
-                    <li>Jalankan perintah npm run dev atau yarn dev.</li>
-
-                    <li>
-                      Mulai Server Laravel: Luncurkan server dengan php artisan
-                      serve dan akses aplikasi di http://localhost:8000.
+                      Mulai Server Laravel: Luncurkan server dengan
+                      <code>php artisan serve </code> dan akses aplikasi di
+                      http://localhost:8000.
                     </li>
 
                     <li>
