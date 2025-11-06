@@ -1,255 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>
-      News App Laravel Open Source: CMS Berita & Blog Portal Informasi
-    </title>
-    <meta
-      name="description"
-      content="Buat Portal Berita atau Blog dengan mudah! News App berbasis Laravel (PHP) Open Source untuk manajemen artikel, kategori, media, dan komentar. Gratis untuk dikembangkan."
-    />
-    <meta
-      name="keywords"
-      content="news app laravel, cms berita php, aplikasi blog open source, portal informasi, manajemen artikel laravel, proyek laravel gratis, web berita"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <script src="../assets/js/custom_element.js"></script>
-  </head>
+<html lang="id">
 
-  <body class="work-sans">
-    <div class="container-fluid mx-0 px-0">
-      <!-- start header -->
-      <header-component></header-component>
-      <!-- end header -->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>
+    News App Laravel Open Source: CMS Berita & Blog Portal Informasi
+  </title>
+  <meta name="description"
+    content="Buat Portal Berita atau Blog dengan mudah! News App berbasis Laravel (PHP) Open Source untuk manajemen artikel, kategori, media, dan komentar. Gratis untuk dikembangkan." />
+  <meta name="keywords"
+    content="news app laravel, cms berita php, aplikasi blog open source, portal informasi, manajemen artikel laravel, proyek laravel gratis, web berita" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/custom_element.js"></script>
+</head>
 
-      <!-- start nav -->
-      <nav-component
-        home="../index.html"
-        blog="../blog.html"
-        project="../project.html"
-        theme="../theme.html"
-        contact="../contact.html"
-      ></nav-component>
-      <!-- end nav -->
-      <section class="container">
-        <div class="row justify-content-center py-4">
-          <div class="col-lg-3 col-md-8 px-0 mx-3">
-            <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
-              <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#instalasi">Instalasi</a></li>
-                <li><a href="#">Panduan Pengguna</a></li>
-                <!-- <li><a href="#">Credit</a></li> -->
-              </ul>
+<body class="work-sans">
+  <div class="container-fluid mx-0 px-0">
+    <!-- start header -->
+    <header-component></header-component>
+    <!-- end header -->
+
+    <!-- start nav -->
+    <nav-component home="../index.html" blog="../blog.html" project="../project.html" theme="../theme.html"
+      contact="../contact.html"></nav-component>
+    <!-- end nav -->
+    <section class="container">
+      <div class="row justify-content-center py-4">
+        <div class="col-lg-3 col-md-8 px-0 mx-3">
+          <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
+            <ul>
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#instalasi">Instalasi</a></li>
+              <li><a href="#">Panduan Pengguna</a></li>
+              <!-- <li><a href="#">Credit</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-8 mx-3">
+          <div class="justify row" id="intro">
+            <div class="mx-auto rounded me-bg-primary">
+              <div class="title-description py-3">
+                <h2 class="text-center">Intro</h2>
+                <p>
+                  News App adalah sebuah aplikasi berbasis web yang dirancang
+                  untuk memudahkan pengguna dalam membuat dan mengelola situs
+                  berita, blog pribadi, maupun portal informasi. Aplikasi ini
+                  dikembangkan menggunakan bahasa pemrograman PHP, dengan
+                  framework Laravel sebagai fondasi utamanya.
+                </p>
+                <p>
+                  Melalui News App, pengguna dapat dengan mudah membuat
+                  artikel, mengatur kategori berita, menambahkan gambar atau
+                  media pendukung, serta mengelola komentar dari pembaca.
+                  Aplikasi ini juga dilengkapi dengan sistem autentikasi,
+                  sehingga hanya pengguna yang terdaftar atau admin yang
+                  memiliki hak untuk menulis dan mengedit konten.
+                </p>
+                <p>
+                  Aplikasi ini bersifat open source dan gratis, sehingga siapa
+                  pun dapat memodifikasi, mengembangkan, atau menambahkan
+                  fitur baru sesuai kebutuhan. Tujuannya adalah menciptakan
+                  ekosistem pengembangan yang kolaboratif dan mendorong
+                  pembelajaran di bidang pemrograman web.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-7 col-md-8 mx-3">
-            <div class="justify row" id="intro">
-              <div class="mx-auto rounded me-bg-primary">
-                <div class="title-description py-3">
-                  <h2 class="text-center">Intro</h2>
-                  <p>
-                    News App adalah sebuah aplikasi berbasis web yang dirancang
-                    untuk memudahkan pengguna dalam membuat dan mengelola situs
-                    berita, blog pribadi, maupun portal informasi. Aplikasi ini
-                    dikembangkan menggunakan bahasa pemrograman PHP, dengan
-                    framework Laravel sebagai fondasi utamanya.
-                  </p>
-                  <p>
-                    Melalui News App, pengguna dapat dengan mudah membuat
-                    artikel, mengatur kategori berita, menambahkan gambar atau
-                    media pendukung, serta mengelola komentar dari pembaca.
-                    Aplikasi ini juga dilengkapi dengan sistem autentikasi,
-                    sehingga hanya pengguna yang terdaftar atau admin yang
-                    memiliki hak untuk menulis dan mengedit konten.
-                  </p>
-                  <p>
-                    Aplikasi ini bersifat open source dan gratis, sehingga siapa
-                    pun dapat memodifikasi, mengembangkan, atau menambahkan
-                    fitur baru sesuai kebutuhan. Tujuannya adalah menciptakan
-                    ekosistem pengembangan yang kolaboratif dan mendorong
-                    pembelajaran di bidang pemrograman web.
-                  </p>
+
+          <div class="justify row mt-4">
+            <div class="mx-auto p-4 rounded me-bg-primary">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img
+                      src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/home.png"
+                      class="d-block w-100" alt="..." />
+                  </div>
+                  <!-- slide 2 -->
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/detail.png"
+                      class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="justify row mt-4">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div
-                  id="carouselExampleDark"
-                  class="carousel carousel-dark slide"
-                >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <img
-                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/home.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <!-- slide 2 -->
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/detail.png"
-                        class="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+          <div class="justify row mt-4" id="instalasi">
+            <div class="mx-auto p-4 rounded me-bg-primary">
+              <div class="title-description mx-4 mt-3">
+                <h3 class="">Instalasi App</h3>
               </div>
-            </div>
+              <div class="text-description m-4">
+                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
+                GitHub:
+                <ol>
+                  <li>
+                    Buka command promp, atau yang lainnya. arahkan ke
+                    direktory aplikasi akan di simpan
+                  </li>
+                  <li>
+                    Kloning Repositori: Gunakan perintah git clone untuk
+                    mengunduh kode sumber dari GitHub.
+                    <a href="https://github.com/alafgani1000/news_app">Link repository</a>
+                  </li>
 
-            <div class="justify row mt-4" id="instalasi">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div class="title-description mx-4 mt-3">
-                  <h3 class="">Instalasi App</h3>
-                </div>
-                <div class="text-description m-4">
-                  Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
-                  GitHub:
-                  <ol>
-                    <li>
-                      Buka command promp, atau yang lainnya. arahkan ke
-                      direktory aplikasi akan di simpan
-                    </li>
-                    <li>
-                      Kloning Repositori: Gunakan perintah git clone untuk
-                      mengunduh kode sumber dari GitHub.
-                      <a href="https://github.com/alafgani1000/news_app"
-                        >Link repository</a
-                      >
-                    </li>
+                  <li>
+                    Arahkan ke Direktori Proyek: Masukkan folder proyek
+                    menggunakan cd nama-folder.
+                  </li>
 
-                    <li>
-                      Arahkan ke Direktori Proyek: Masukkan folder proyek
-                      menggunakan cd nama-folder.
-                    </li>
+                  <li>
+                    Instal Dependensi: Jalankan <b>composer install</b> untuk
+                    menginstal semua dependensi yang diperlukan.
+                  </li>
 
-                    <li>
-                      Instal Dependensi: Jalankan <b>composer install</b> untuk
-                      menginstal semua dependensi yang diperlukan.
-                    </li>
+                  <li>copy .env.example ganti nama dengan .env</li>
 
-                    <li>copy .env.example ganti nama dengan .env</li>
+                  <li>
+                    Konfigurasi File .env: Perbarui pengaturan basis data,
+                    termasuk nama basis data, nama pengguna, dan kata sandi.
+                  </li>
 
-                    <li>
-                      Konfigurasi File .env: Perbarui pengaturan basis data,
-                      termasuk nama basis data, nama pengguna, dan kata sandi.
-                    </li>
+                  <li>
+                    Buat Kunci Aplikasi: Jalankan
+                    <b>php artisan key:generate</b>
+                    untuk membuat kunci aplikasi yang unik.
+                  </li>
 
-                    <li>
-                      Buat Kunci Aplikasi: Jalankan
-                      <b>php artisan key:generate</b>
-                      untuk membuat kunci aplikasi yang unik.
-                    </li>
+                  <li>
+                    Buat Basis Data: Siapkan basis data baru yang sesuai
+                    dengan nama yang ditentukan dalam file .env.
+                  </li>
 
-                    <li>
-                      Buat Basis Data: Siapkan basis data baru yang sesuai
-                      dengan nama yang ditentukan dalam file .env.
-                    </li>
+                  <li>
+                    Jalankan Migrasi Basis Data: Gunakan
+                    <b>php artisan migrate</b>
+                    untuk membuat tabel yang diperlukan dalam basis data.
+                  </li>
 
-                    <li>
-                      Jalankan Migrasi Basis Data: Gunakan
-                      <b>php artisan migrate</b>
-                      untuk membuat tabel yang diperlukan dalam basis data.
-                    </li>
+                  <li>
+                    Jalankan perintah <b>php artisan db:seed</b> untuk input
+                    aturan awal.
+                  </li>
 
-                    <li>
-                      Jalankan perintah <b>php artisan db:seed</b> untuk input
-                      aturan awal.
-                    </li>
+                  <li>Jalankan perintah npm run dev atau yarn dev.</li>
 
-                    <li>Jalankan perintah npm run dev atau yarn dev.</li>
+                  <li>
+                    Mulai Server Laravel: Luncurkan server dengan php artisan
+                    serve dan akses aplikasi di http://localhost:8000.
+                  </li>
 
-                    <li>
-                      Mulai Server Laravel: Luncurkan server dengan php artisan
-                      serve dan akses aplikasi di http://localhost:8000.
-                    </li>
-
-                    <li>
-                      Silakan masuk dengan nama pengguna dan kata sandi di
-                      UserSeeder.
-                    </li>
-                  </ol>
-                </div>
-                <div class="text-description"></div>
+                  <li>
+                    Silakan masuk dengan nama pengguna dan kata sandi di
+                    UserSeeder.
+                  </li>
+                </ol>
               </div>
+              <div class="text-description"></div>
             </div>
           </div>
         </div>
-      </section>
-      <footer></footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

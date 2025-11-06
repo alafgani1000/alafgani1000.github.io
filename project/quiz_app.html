@@ -1,299 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>
-      Quiz App Laravel Open Source: Aplikasi Manajemen Kuis PHP Gratis
-    </title>
-    <meta
-      name="description"
-      content="Dapatkan Quiz App berbasis Laravel (PHP) yang Open Source! Kelola, buat, dan publikasikan kuis dengan mudah. Cocok untuk proyek pembelajaran dan pengembangan web."
-    />
-    <meta
-      name="keywords"
-      content="quiz app laravel, aplikasi kuis php, manajemen kuis, laravel open source, proyek laravel gratis, belajar coding web, kuis online"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <script src="../assets/js/custom_element.js"></script>
-  </head>
+<html lang="id">
 
-  <body class="work-sans">
-    <div class="container-fluid mx-0 px-0">
-      <!-- start header -->
-      <header-component></header-component>
-      <!-- end header -->
+<head>
+  <meta charset="utf-8" />
+  <title>
+    Quiz App Laravel Open Source: Aplikasi Manajemen Kuis PHP Gratis
+  </title>
+  <meta name="description"
+    content="Dapatkan Quiz App berbasis Laravel (PHP) yang Open Source! Kelola, buat, dan publikasikan kuis dengan mudah. Cocok untuk proyek pembelajaran dan pengembangan web." />
+  <meta name="keywords"
+    content="quiz app laravel, aplikasi kuis php, manajemen kuis, laravel open source, proyek laravel gratis, belajar coding web, kuis online" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <script src="../assets/js/custom_element.js"></script>
+</head>
 
-      <!-- start nav -->
-      <nav-component
-        home="../index.html"
-        blog="../blog.html"
-        project="../project.html"
-        theme="../theme.html"
-        contact="../contact.html"
-      ></nav-component>
-      <!-- end nav -->
-      <section class="container">
-        <div class="row justify-content-center py-4">
-          <div class="col-lg-3 col-md-8 px-0 mx-3">
-            <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
-              <ul>
-                <li><a href="#intro">Intro</a></li>
-                <li><a href="#kebutuhan">Kebutuhan</a></li>
-                <li><a href="#instalasi">Instalasi</a></li>
-                <li><a href="#">Panduan Pengguna</a></li>
-                <!-- <li><a href="#">Credit</a></li> -->
-              </ul>
+<body class="work-sans">
+  <div class="container-fluid mx-0 px-0">
+    <!-- start header -->
+    <header-component></header-component>
+    <!-- end header -->
+
+    <!-- start nav -->
+    <nav-component home="../index.html" blog="../blog.html" project="../project.html" theme="../theme.html"
+      contact="../contact.html"></nav-component>
+    <!-- end nav -->
+    <section class="container">
+      <div class="row justify-content-center py-4">
+        <div class="col-lg-3 col-md-8 px-0 mx-3">
+          <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
+            <ul>
+              <li><a href="#intro">Intro</a></li>
+              <li><a href="#kebutuhan">Kebutuhan</a></li>
+              <li><a href="#instalasi">Instalasi</a></li>
+              <li><a href="#">Panduan Pengguna</a></li>
+              <!-- <li><a href="#">Credit</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-8 mx-3">
+          <div class="justify row" id="intro">
+            <div class="mx-auto rounded me-bg-primary">
+              <div class="title-description py-3">
+                <h2 class="text-center">Intro</h2>
+                <p>
+                  Quiz App adalah aplikasi untuk manajemen kuis yang dibuat
+                  menggunakan bahasa pemrograman PHP, lebih spesifik dengan
+                  framework Laravel. Aplikasi ini memiliki berbagai fitur
+                  seperti membuat kuis, menambahkan pertanyaan dan jawaban,
+                  serta mempublikasikannya ke halaman utama. Setiap orang
+                  dapat mengakses dan mengikuti kuis tersebut, dengan syarat
+                  mereka harus mendaftar terlebih dahulu.
+                </p>
+                <p>
+                  Aplikasi ini masih memiliki beberapa kekurangan, namun sudah
+                  cukup lengkap untuk fitur-fitur dasarnya. Selain itu,
+                  aplikasi ini bersifat open source atau gratis, sehingga
+                  siapa pun dapat mengubah dan mengembangkannya agar menjadi
+                  lebih baik serta memiliki lebih banyak fitur. Aplikasi ini
+                  juga dapat digunakan sebagai media pembelajaran bagi siapa
+                  pun yang sedang belajar coding, khususnya dalam pengembangan
+                  aplikasi berbasis web.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="col-lg-7 col-md-8 mx-3">
-            <div class="justify row" id="intro">
-              <div class="mx-auto rounded me-bg-primary">
-                <div class="title-description py-3">
-                  <h2 class="text-center">Intro</h2>
-                  <p>
-                    Quiz App adalah aplikasi untuk manajemen kuis yang dibuat
-                    menggunakan bahasa pemrograman PHP, lebih spesifik dengan
-                    framework Laravel. Aplikasi ini memiliki berbagai fitur
-                    seperti membuat kuis, menambahkan pertanyaan dan jawaban,
-                    serta mempublikasikannya ke halaman utama. Setiap orang
-                    dapat mengakses dan mengikuti kuis tersebut, dengan syarat
-                    mereka harus mendaftar terlebih dahulu.
-                  </p>
-                  <p>
-                    Aplikasi ini masih memiliki beberapa kekurangan, namun sudah
-                    cukup lengkap untuk fitur-fitur dasarnya. Selain itu,
-                    aplikasi ini bersifat open source atau gratis, sehingga
-                    siapa pun dapat mengubah dan mengembangkannya agar menjadi
-                    lebih baik serta memiliki lebih banyak fitur. Aplikasi ini
-                    juga dapat digunakan sebagai media pembelajaran bagi siapa
-                    pun yang sedang belajar coding, khususnya dalam pengembangan
-                    aplikasi berbasis web.
-                  </p>
-                </div>
-              </div>
-            </div>
 
-            <div class="justify row mt-4">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div
-                  id="carouselExampleDark"
-                  class="carousel carousel-dark slide"
-                >
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="3"
-                      aria-label="Slide 4"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselExampleDark"
-                      data-bs-slide-to="4"
-                      aria-label="Slide 5"
-                    ></button>
+          <div class="justify row mt-4">
+            <div class="mx-auto p-4 rounded me-bg-primary">
+              <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../assets/images/quiz/home.png" class="d-block w-100" alt="halaman utama quiz" />
                   </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                      <img
-                        src="../assets/images/quiz/home.png"
-                        class="d-block w-100"
-                        alt="halaman utama quiz"
-                      />
-                    </div>
-                    <!-- slide 2 -->
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="../assets/images/quiz/quiz_session.png"
-                        class="d-block w-100"
-                        alt="halaman quiz"
-                      />
-                    </div>
-                    <!-- slide 3 -->
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="../assets/images/quiz/result_quiz.png"
-                        class="d-block w-100"
-                        alt="quiz result"
-                      />
-                    </div>
-                    <!-- slide 4 -->
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="../assets/images/quiz/quiz.png"
-                        class="d-block w-100"
-                        alt="admin manage quiz"
-                      />
-                    </div>
-                    <!-- slide 4 -->
-                    <div class="carousel-item" data-bs-interval="2000">
-                      <img
-                        src="../assets/images/quiz/question.png"
-                        class="d-block w-100"
-                        alt="admin manage question"
-                      />
-                    </div>
+                  <!-- slide 2 -->
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/images/quiz/quiz_session.png" class="d-block w-100" alt="halaman quiz" />
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                  <!-- slide 3 -->
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/images/quiz/result_quiz.png" class="d-block w-100" alt="quiz result" />
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/images/quiz/quiz.png" class="d-block w-100" alt="admin manage quiz" />
+                  </div>
+                  <!-- slide 4 -->
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../assets/images/quiz/question.png" class="d-block w-100" alt="admin manage question" />
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
             </div>
+          </div>
 
-            <div class="justify row mt-4" id="kebutuhan">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div class="title-description mx-4 mt-3">
-                  <h3 class="">Kebutuhan Aplikasi</h3>
-                </div>
-                <div class="text-description m-4">
-                  <ul>
-                    <li>PHP ^8.1</li>
-                    <li>Composer 2</li>
-                    <li>Node.js 20+</li>
-                    <li>NPM 10+</li>
-                    <li>Mysql</li>
-                    <li>Redis Server</li>
-                    <li>Web Server (Apache, Nginx, etc.)</li>
-                  </ul>
-                </div>
+          <div class="justify row mt-4" id="kebutuhan">
+            <div class="mx-auto p-4 rounded me-bg-primary">
+              <div class="title-description mx-4 mt-3">
+                <h3 class="">Kebutuhan Aplikasi</h3>
+              </div>
+              <div class="text-description m-4">
+                <ul>
+                  <li>PHP ^8.1</li>
+                  <li>Composer 2</li>
+                  <li>Node.js 20+</li>
+                  <li>NPM 10+</li>
+                  <li>Mysql</li>
+                  <li>Redis Server</li>
+                  <li>Web Server (Apache, Nginx, etc.)</li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="justify row mt-4" id="instalasi">
-              <div class="mx-auto p-4 rounded me-bg-primary">
-                <div class="title-description mx-4 mt-3">
-                  <h3 class="">Instalasi App</h3>
-                </div>
-                <div class="text-description m-4">
-                  Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
-                  GitHub:
-                  <ol>
-                    <li>
-                      Clone dari Repositori
-                      <br />
-                      <code
-                        >git clone
-                        https://github.com/kuis-tech/quiz-app.git</code
-                      >
-                    </li>
-                    <li>
-                      Arahkan ke Direktori Proyek, apabila menggunakan command
-                      prompt gunakan perintah cd nama-folder.
-                    </li>
-                    <li>copy .env.example ganti nama dengan .env</li>
-                    <li>
-                      Konfigurasi File .env, sesuaikan pengaturan database
-                      seperti nama basis data, nama pengguna, dan kata sandi.
-                    </li>
-                    <li>
-                      Jalankan command <code>composer install</code> dan
-                      <code>npm install</code> untuk menginstal semua dependensi
-                      yang diperlukan.
-                    </li>
-                    <li>
-                      Jalankan command <code>php artisan key:generate</code>
-                    </li>
-
-                    <li>
-                      Siapkan basis data baru yang sesuai dengan nama yang
-                      ditentukan dalam file .env.
-                    </li>
-
-                    <li>Jalankan command <code>php artisan migrate</code></li>
-
-                    <li>
-                      Jalankan perintah <code>php artisan db:seed</code> untuk
-                      input aturan awal.
-                    </li>
-
-                    <li>
-                      Jalankan perintah <code>npm run dev</code> atau
-                      <code>yarn dev.</code>
-                    </li>
-
-                    <li>
-                      Mulai Server Laravel: Luncurkan server dengan
-                      <code>php artisan serve </code> dan akses aplikasi di
-                      http://localhost:8000.
-                    </li>
-
-                    <li>
-                      Silakan masuk dengan nama pengguna dan kata sandi di
-                      UserSeeder.
-                    </li>
-                  </ol>
-                </div>
-                <div class="text-description"></div>
+          <div class="justify row mt-4" id="instalasi">
+            <div class="mx-auto p-4 rounded me-bg-primary">
+              <div class="title-description mx-4 mt-3">
+                <h3 class="">Instalasi App</h3>
               </div>
+              <div class="text-description m-4">
+                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
+                GitHub:
+                <ol>
+                  <li>
+                    Clone dari Repositori
+                    <br />
+                    <code>git clone
+                        https://github.com/kuis-tech/quiz-app.git</code>
+                  </li>
+                  <li>
+                    Arahkan ke Direktori Proyek, apabila menggunakan command
+                    prompt gunakan perintah cd nama-folder.
+                  </li>
+                  <li>copy .env.example ganti nama dengan .env</li>
+                  <li>
+                    Konfigurasi File .env, sesuaikan pengaturan database
+                    seperti nama basis data, nama pengguna, dan kata sandi.
+                  </li>
+                  <li>
+                    Jalankan command <code>composer install</code> dan
+                    <code>npm install</code> untuk menginstal semua dependensi
+                    yang diperlukan.
+                  </li>
+                  <li>
+                    Jalankan command <code>php artisan key:generate</code>
+                  </li>
+
+                  <li>
+                    Siapkan basis data baru yang sesuai dengan nama yang
+                    ditentukan dalam file .env.
+                  </li>
+
+                  <li>Jalankan command <code>php artisan migrate</code></li>
+
+                  <li>
+                    Jalankan perintah <code>php artisan db:seed</code> untuk
+                    input aturan awal.
+                  </li>
+
+                  <li>
+                    Jalankan perintah <code>npm run dev</code> atau
+                    <code>yarn dev.</code>
+                  </li>
+
+                  <li>
+                    Mulai Server Laravel: Luncurkan server dengan
+                    <code>php artisan serve </code> dan akses aplikasi di
+                    http://localhost:8000.
+                  </li>
+
+                  <li>
+                    Silakan masuk dengan nama pengguna dan kata sandi di
+                    UserSeeder.
+                  </li>
+                </ol>
+              </div>
+              <div class="text-description"></div>
             </div>
           </div>
         </div>
-      </section>
-      <footer></footer>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      </div>
+    </section>
+    <footer></footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
