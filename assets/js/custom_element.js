@@ -109,7 +109,19 @@ class NavComponent extends HTMLElement {
 
 class FooterComponent extends HTMLElement {
   connectedCallback() {
-    this.innerHTML = `<footer class="mt-4"></footer>`;
+    this.innerHTML = `
+      <footer class="mt-5 py-4 me-bg-secondary text-center">
+        <div class="container">
+          <p class="mb-2">
+            &copy; ${new Date().getFullYear()} <span class="pacifico-regular">Teng Gooo</span>. All rights reserved.
+          </p>
+          <p class="small mb-0">
+            Created with <span style="color: #e25555;">&hearts;</span> by 
+            <a href="https://github.com/alafgani1000" class="fw-bold text-dark text-decoration-none">alafgani1000</a>
+          </p>
+        </div>
+      </footer>
+    `;
   }
 }
 
