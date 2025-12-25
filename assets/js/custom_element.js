@@ -1,4 +1,4 @@
-class MyCustomElement extends HTMLElement {}
+class MyCustomElement extends HTMLElement { }
 
 class HeaderComponent extends HTMLElement {
   connectedCallback() {
@@ -44,6 +44,17 @@ class NavComponent extends HTMLElement {
   }
 
   updateContent(home, blog, project, theme, contact) {
+    // Get current page path
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop() || 'index.html';
+
+    // Determine which menu item should be active
+    const isHome = currentPage === 'index.html' || currentPage === '' || currentPage === '/';
+    const isBlog = currentPage === 'blog.html';
+    const isProject = currentPage === 'project.html';
+    const isTheme = currentPage === 'theme.html';
+    const isContact = currentPage === 'contact.html';
+
     this.innerHTML = ` <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
           <button
@@ -63,25 +74,25 @@ class NavComponent extends HTMLElement {
           >
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3 fw-normal">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=${home}
+                <a class="nav-link ${isHome ? 'active' : ''}" aria-current="page" href="${home}"
                   >Home</a
                 >
               </li>
                 <li class="nav-item">
-                <a class="nav-link" aria-current="page" href=${blog}>Blog</a>
+                <a class="nav-link ${isBlog ? 'active' : ''}" aria-current="page" href="${blog}">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href=${project}
+                <a class="nav-link ${isProject ? 'active' : ''}" aria-current="page" href="${project}"
                   >App Project</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href=${theme}
+                <a class="nav-link ${isTheme ? 'active' : ''}" aria-current="page" href="${theme}"
                   >Theme Project</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href=${contact}
+                <a class="nav-link ${isContact ? 'active' : ''}" aria-current="page" href="${contact}"
                   >Contact</a
                 >
               </li>
