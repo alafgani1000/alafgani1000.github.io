@@ -50,7 +50,7 @@
                             <div class="title-description py-3">
                                 <h2 class="text-center">Intro</h2>
                                 <p>
-                                    <a href="/project/recruitment_app.html">Sistem manajemen rekrutmenM</a>a berbasis
+                                    <a href="/project/recruitment_app.html">Sistem manajemen rekrutmen</a> berbasis
                                     Laravel dan
                                     React/Inertia.js ini benar-benar jadi game changer karena fiturnya yang serba
                                     otomatis. Untuk perusahaan,
@@ -141,11 +141,160 @@
                                 <h3 class="">Instalasi App</h3>
                             </div>
                             <div class="text-description m-4">
-                                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
-                                GitHub:
-
+                                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari GitHub:
+                                <ol>
+                                    <li>
+                                        <strong>Klon Repositori</strong>
+                                        <br />
+                                        <code>git clone &lt;repository-url&gt;</code>
+                                        <br />
+                                        <code>cd Recruitment</code>
+                                    </li>
+                                    <li>
+                                        <strong>Instal Dependensi PHP</strong>
+                                        <br />
+                                        Gunakan Composer untuk menginstal dependensi backend:
+                                        <br />
+                                        <code>composer install</code>
+                                    </li>
+                                    <li>
+                                        <strong>Instal Dependensi JavaScript</strong>
+                                        <br />
+                                        Gunakan npm atau yarn:
+                                        <br />
+                                        <code>npm install</code> atau <code>yarn install</code>
+                                    </li>
+                                    <li>
+                                        <strong>Konfigurasi Aplikasi</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>File Environment:</strong> Salin file contoh untuk membuat
+                                                konfigurasi lokal.
+                                                <br />
+                                                <code>cp .env.example .env</code>
+                                            </li>
+                                            <li>
+                                                <strong>Generate App Key:</strong>
+                                                <br />
+                                                <code>php artisan key:generate</code>
+                                            </li>
+                                            <li>
+                                                <strong>Konfigurasi Database:</strong> Buka file <code>.env</code> dan
+                                                perbarui pengaturan database sesuai pengaturan lokal Anda:
+                                                <br />
+                                                <code>DB_CONNECTION=mysql</code>
+                                                <br />
+                                                <code>DB_HOST=127.0.0.1</code>
+                                                <br />
+                                                <code>DB_PORT=3306</code>
+                                                <br />
+                                                <code>DB_DATABASE=Recruitment_db</code>
+                                                <br />
+                                                <code>DB_USERNAME=root</code>
+                                                <br />
+                                                <code>DB_PASSWORD=</code>
+                                                <br />
+                                                <em>Catatan: Pastikan Anda telah membuat database (contoh:
+                                                    Recruitment_db) di server MySQL Anda sebelum melanjutkan.</em>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Pengaturan Database</strong>
+                                        <br />
+                                        Jalankan migrasi dan seeder untuk menyiapkan struktur database dan data awal
+                                        (termasuk pengguna admin, kategori, dan peran/roles):
+                                        <br />
+                                        <code>php artisan migrate --seed</code>
+                                        <br />
+                                        Atau jalankan secara terpisah:
+                                        <br />
+                                        <code>php artisan migrate</code> dan <code>php artisan db:seed</code>
+                                    </li>
+                                    <li>
+                                        <strong>Konfigurasi Email &amp; Antrean (Queue)</strong>
+                                        <br />
+                                        Aplikasi ini menggunakan Laravel Queues untuk mengirim email secara asinkron.
+                                        <ul>
+                                            <li>
+                                                <strong>Konfigurasi Mail Driver:</strong> Di file <code>.env</code>,
+                                                atur kredensial server email Anda. Untuk pengembangan lokal, gunakan
+                                                Mailtrap:
+                                                <br />
+                                                <code>MAIL_MAILER=smtp</code>
+                                                <br />
+                                                <code>MAIL_HOST=sandbox.smtp.mailtrap.io</code>
+                                                <br />
+                                                <code>MAIL_PORT=2525</code>
+                                                <br />
+                                                <code>MAIL_USERNAME=username_anda</code>
+                                                <br />
+                                                <code>MAIL_PASSWORD=password_anda</code>
+                                                <br />
+                                                <code>MAIL_ENCRYPTION=tls</code>
+                                            </li>
+                                            <li>
+                                                <strong>Konfigurasi Queue Driver:</strong> Setel koneksi antrean ke
+                                                database:
+                                                <br />
+                                                <code>QUEUE_CONNECTION=database</code>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Pengaturan Penyimpanan File</strong>
+                                        <br />
+                                        Buat tautan simbolis agar file yang diunggah dapat diakses melalui web:
+                                        <br />
+                                        <code>php artisan storage:link</code>
+                                    </li>
+                                    <li>
+                                        <strong>Menjalankan Aplikasi</strong>
+                                        <br />
+                                        Buka dua terminal terpisah:
+                                        <ul>
+                                            <li>
+                                                <strong>Terminal 1 (Backend):</strong>
+                                                <br />
+                                                <code>php artisan serve</code>
+                                                <br />
+                                                Aplikasi akan tersedia di http://127.0.0.1:8000
+                                            </li>
+                                            <li>
+                                                <strong>Terminal 2 (Frontend):</strong>
+                                                <br />
+                                                <code>npm run dev</code> atau <code>yarn dev</code>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Kredensial Default (Seeder)</strong>
+                                        <br />
+                                        Gunakan kredensial berikut untuk masuk sebagai Administrator:
+                                        <ul>
+                                            <li>Email: <code>admin@test.com</code></li>
+                                            <li>Password: <code>test</code></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Informasi Tambahan</strong>
+                                        <ul>
+                                            <li>
+                                                <strong>Queue Worker:</strong> Jika notifikasi email aktif, jalankan
+                                                worker antrean untuk memproses tugas:
+                                                <br />
+                                                <code>php artisan queue:work</code>
+                                            </li>
+                                            <li>
+                                                <strong>Production Build:</strong> Untuk membuild aset frontend untuk
+                                                peluncuran produksi:
+                                                <br />
+                                                <code>npm run build</code> atau <code>yarn build</code>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ol>
                             </div>
-                            <div class="text-description"></div>
                         </div>
                     </div>
                 </div>
