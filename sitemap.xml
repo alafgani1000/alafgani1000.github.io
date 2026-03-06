@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <!-- Home Page -->
     <url>
         <loc>https://tenggoo.my.id/</loc>
-        <lastmod>2026-02-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    
-    <!-- Main Pages -->
-    <url>
-        <loc>https://tenggoo.my.id/index.html</loc>
         <lastmod>2026-02-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
@@ -39,8 +30,6 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
-    <!-- Project Pages - App Projects -->
     <url>
         <loc>https://tenggoo.my.id/project/quiz_app.html</loc>
         <lastmod>2026-02-12</lastmod>
@@ -71,8 +60,6 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-    
-    <!-- Theme Pages -->
     <url>
         <loc>https://tenggoo.my.id/themes/symfoni_food.html</loc>
         <lastmod>2026-02-12</lastmod>
