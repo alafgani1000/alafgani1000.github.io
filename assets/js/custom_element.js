@@ -18,7 +18,7 @@ class NavComponent extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ["home", "blog", "project", "theme", "contact"];
+    return ["home", "aplikasi", "project", "theme", "contact"];
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -26,8 +26,8 @@ class NavComponent extends HTMLElement {
       this.home = newValue;
     }
 
-    if (name === "blog" && newValue) {
-      this.blog = newValue;
+    if (name === "aplikasi" && newValue) {
+      this.aplikasi = newValue;
     }
 
     if (name === "project" && newValue) {
@@ -43,14 +43,14 @@ class NavComponent extends HTMLElement {
     }
   }
 
-  updateContent(home, blog, project, theme, contact) {
+  updateContent(home, aplikasi, project, theme, contact) {
     // Get current page path
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split('/').pop() || 'index.html';
 
     // Determine which menu item should be active
     const isHome = currentPage === 'index.html' || currentPage === '' || currentPage === '/';
-    const isBlog = currentPage === 'blog.html';
+    const isAplikasi = currentPage === 'aplikasi.html';
     const isProject = currentPage === 'project.html';
     const isTheme = currentPage === 'theme.html';
     const isContact = currentPage === 'contact.html';
@@ -78,22 +78,24 @@ class NavComponent extends HTMLElement {
                   >Home</a
                 >
               </li>
-                <li class="nav-item">
-                <a class="nav-link ${isBlog ? 'active' : ''}" aria-current="page" href="${blog}">Blog</a>
+              <li class="nav-item">
+                <a class="nav-link ${isAplikasi ? 'active' : ''}" aria-current="page" href="${aplikasi}"
+                  >Aplikasi</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link ${isProject ? 'active' : ''}" aria-current="page" href="${project}"
-                  >App Project</a
+                  >Source Code</a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link ${isTheme ? 'active' : ''}" aria-current="page" href="${theme}"
-                  >Theme Project</a
+                  >Tema</a
                 >
               </li>
               <li class="nav-item">
                 <a class="nav-link ${isContact ? 'active' : ''}" aria-current="page" href="${contact}"
-                  >Contact</a
+                  >Kontak</a
                 >
               </li>
               <li class="nav-item">
@@ -110,11 +112,11 @@ class NavComponent extends HTMLElement {
 
   connectedCallback() {
     const home = this.getAttribute("home") || "index.html";
-    const blog = this.getAttribute("blog") || "blog.html";
+    const aplikasi = this.getAttribute("aplikasi") || "aplikasi.html";
     const project = this.getAttribute("project") || "project.html";
     const theme = this.getAttribute("theme") || "theme.html";
     const contact = this.getAttribute("contact") || "contact.html";
-    this.updateContent(home, blog, project, theme, contact);
+    this.updateContent(home, aplikasi, project, theme, contact);
   }
 }
 
