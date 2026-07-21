@@ -53,7 +53,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="canonical" href="https://tenggoo.my.id/" />
-  <script src="assets/js/custom_element.js?v=0.0.1" defer></script>
+  <script src="assets/js/custom_element.js?v=0.0.2" defer></script>
 </head>
 
 <body class="work-sans index-page">
@@ -76,13 +76,18 @@
           Download dan pelajari source code Laravel open source siap pakai
           untuk belajar coding, membangun portfolio, dan pengembangan produk web.
         </p>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
-          <span class="badge text-bg-light index-chip">Laravel</span>
-          <span class="badge text-bg-light index-chip">React</span>
-          <span class="badge text-bg-light index-chip">Inertia.js</span>
-          <span class="badge text-bg-light index-chip">CMS</span>
-          <span class="badge text-bg-light index-chip">Recruitment</span>
-          <span class="badge text-bg-light index-chip">Template Web</span>
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="filter-badges">
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="Laravel">Laravel</span>
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="React">React</span>
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="Inertia.js">Inertia.js</span>
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="CMS">CMS</span>
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="Recruitment">Recruitment</span>
+          <span class="badge text-bg-light index-chip cursor-pointer" data-filter="Template Web">Template Web</span>
+        </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-6">
+            <input type="text" id="searchInput" class="form-control" placeholder="Cari aplikasi atau template (misal: Kasir, News App)..." />
+          </div>
         </div>
         <div class="d-flex flex-wrap justify-content-center gap-2">
           <a href="project.html" class="btn me-btn-gold">Jelajahi Source Code</a>
@@ -102,7 +107,7 @@
       </div>
 
       <div class="row g-4">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="laravel react inertia.js project">
           <article class="index-card h-100">
             <img src="assets/images/project_app/1_list_project.png" class="index-card-image"
               alt="Preview project management app" loading="lazy" />
@@ -121,7 +126,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="laravel recruitment">
           <article class="index-card h-100">
             <img src="assets/images/recruitment_app/1.png" class="index-card-image" alt="Preview recruitment app"
               loading="lazy" />
@@ -140,7 +145,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="laravel react quiz">
           <article class="index-card h-100">
             <img src="assets/images/quiz/home.png" class="index-card-image" alt="Preview quiz app" loading="lazy" />
             <div class="index-card-body">
@@ -158,7 +163,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="laravel cms news">
           <article class="index-card h-100">
             <img src="assets/images/news_app/home.png" class="index-card-image" alt="Preview news app" loading="lazy" />
             <div class="index-card-body">
@@ -187,7 +192,7 @@
       </div>
 
       <div class="row g-4 mb-5">
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="template web html symfoni food">
           <article class="index-card h-100">
             <img src="assets/images/symfony_food/1.jpg" class="index-card-image" alt="Preview theme Symfoni Food"
               loading="lazy" />
@@ -208,7 +213,7 @@
           </article>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 filter-item" data-tags="template web html vitara medical">
           <article class="index-card h-100">
             <img src="assets/images/vitara/preview_vitara.png" class="index-card-image" alt="Preview theme Vitara"
               loading="lazy" />
@@ -247,6 +252,60 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('searchInput');
+      const badges = document.querySelectorAll('#filter-badges .badge');
+      const items = document.querySelectorAll('.filter-item');
+      let currentFilter = '';
+
+      function filterItems() {
+        const query = searchInput.value.toLowerCase();
+        
+        items.forEach(item => {
+          const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
+          const title = item.querySelector('h3').innerText.toLowerCase();
+          const desc = item.querySelector('p').innerText.toLowerCase();
+          
+          const matchesSearch = title.includes(query) || desc.includes(query) || tags.includes(query);
+          const matchesBadge = currentFilter === '' || tags.includes(currentFilter.toLowerCase());
+          
+          if (matchesSearch && matchesBadge) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      }
+
+      searchInput.addEventListener('input', filterItems);
+
+      badges.forEach(badge => {
+        badge.addEventListener('click', function () {
+          const filter = this.getAttribute('data-filter');
+          
+          // Toggle filter
+          if (currentFilter === filter) {
+            currentFilter = '';
+            this.classList.replace('text-bg-primary', 'text-bg-light');
+            this.style.color = '';
+          } else {
+            currentFilter = filter;
+            // Reset all badges
+            badges.forEach(b => {
+              b.classList.replace('text-bg-primary', 'text-bg-light');
+              b.style.color = '';
+            });
+            // Highlight clicked
+            this.classList.replace('text-bg-light', 'text-bg-primary');
+            this.style.color = 'white';
+          }
+          filterItems();
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
