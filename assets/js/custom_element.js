@@ -180,6 +180,17 @@ class FooterComponent extends HTMLElement {
                     </div>
                   </a>
                 </li>
+                <li class="mb-3">
+                  <a href="https://bengkelpro.tenggoo.my.id/" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center gap-3 text-dark footer-app-link transition-all text-decoration-none">
+                    <span class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle p-1 shadow-sm" style="width: 32px; height: 32px; flex-shrink: 0;">
+                      <img src="${prefix}assets/images/bengkel_pro.png" alt="Bengkel Pro" width="18" height="18" onerror="this.src='https://img.icons8.com/color/48/maintenance.png'">
+                    </span>
+                    <div>
+                      <span class="d-block fw-semibold small">Bengkel Pro</span>
+                      <span class="text-muted d-block" style="font-size: 0.75rem; margin-top: -2px;">Aplikasi Kasir Bengkel</span>
+                    </div>
+                  </a>
+                </li>
               </ul>
             </div>
 
