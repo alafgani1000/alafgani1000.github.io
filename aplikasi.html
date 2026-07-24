@@ -15,100 +15,500 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tenggoo.my.id/aplikasi.html" />
   <meta property="og:title" content="Aplikasi Web Laravel Gratis | Teng Gooo" />
-  <meta property="og:description"
-    content="Koleksi aplikasi web Laravel gratis dan source code open source yang siap dipakai untuk belajar dan pengembangan project." />
+  <meta property="og:description" content="Koleksi aplikasi web Laravel gratis dan source code open source yang siap dipakai untuk belajar dan pengembangan project." />
   <meta property="og:image" content="https://tenggoo.my.id/assets/images/quiz/home.png" />
 
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://tenggoo.my.id/aplikasi.html" />
   <meta property="twitter:title" content="Aplikasi Web Laravel Gratis | Teng Gooo" />
-  <meta property="twitter:description"
-    content="Koleksi aplikasi web Laravel gratis dan source code open source yang siap dipakai untuk belajar dan pengembangan project." />
+  <meta property="twitter:description" content="Koleksi aplikasi web Laravel gratis dan source code open source yang siap dipakai untuk belajar dan pengembangan project." />
   <meta property="twitter:image" content="https://tenggoo.my.id/assets/images/quiz/home.png" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="canonical" href="https://tenggoo.my.id/aplikasi.html" />
-  <script src="assets/js/custom_element.js?v=0.0.2" defer></script>
+  <script src="assets/js/custom_element.js?v=2.0.0" defer></script>
+
+  <style>
+    /* ─── Aplikasi Page Styles ─── */
+
+    /* Hero */
+    .app-hero {
+      background: var(--gradient-hero);
+      padding: 4.5rem 0 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .app-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%236366f1' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .app-hero .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(99,102,241,0.08);
+      color: var(--color-indigo);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(99,102,241,0.2);
+      margin-bottom: 1.25rem;
+    }
+    .app-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--color-text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .app-hero h1 .hl {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .app-hero p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* Stats strip */
+    .app-stats {
+      background: var(--color-bg-subtle);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      padding: 1.1rem 0;
+    }
+    .app-stats .inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+    .app-stats .stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 2.25rem;
+      border-right: 1px solid var(--color-border);
+    }
+    .app-stats .stat:last-child { border-right: none; }
+    .app-stats .stat-val {
+      font-size: 1.4rem;
+      font-weight: 800;
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1;
+    }
+    .app-stats .stat-lbl {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--color-text-faint);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 0.15rem;
+    }
+
+    /* App Card (full-width row layout) */
+    .app-row {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 0;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: box-shadow var(--duration) var(--ease),
+                  transform var(--duration) var(--ease);
+      margin-bottom: 1.5rem;
+    }
+    .app-row:hover {
+      box-shadow: var(--shadow-indigo);
+      transform: translateY(-4px);
+    }
+    .app-row.reverse { grid-template-columns: 1.6fr 1fr; }
+    @media (max-width: 768px) {
+      .app-row,
+      .app-row.reverse {
+        grid-template-columns: 1fr;
+      }
+      .app-row.reverse .app-row-img { order: -1; }
+    }
+
+    /* Image/Icon panel */
+    .app-row-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5rem 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .app-row-img.bg-scan  { background: linear-gradient(135deg, #ede9fe 0%, #dbeafe 100%); }
+    .app-row-img.bg-pdf   { background: linear-gradient(135deg, #fce7f3 0%, #ffe4e6 100%); }
+    .app-row-img.bg-bengkel { background: linear-gradient(135deg, #d1fae5 0%, #e0f2fe 100%); }
+
+    .app-row-img .app-icon-wrap {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+      transition: transform 0.35s var(--ease);
+      position: relative;
+      z-index: 1;
+    }
+    .app-row:hover .app-icon-wrap {
+      transform: scale(1.06) rotate(-3deg);
+    }
+    .app-row-img .app-icon-wrap img {
+      width: 56px;
+      height: 56px;
+      object-fit: contain;
+    }
+
+    /* Decorative blobs */
+    .app-row-img::before,
+    .app-row-img::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.35;
+    }
+    .app-row-img.bg-scan::before  { width:120px;height:120px;background:#c4b5fd;top:-30px;right:-30px; }
+    .app-row-img.bg-scan::after   { width:80px;height:80px;background:#93c5fd;bottom:-20px;left:-20px; }
+    .app-row-img.bg-pdf::before   { width:120px;height:120px;background:#fbcfe8;top:-30px;left:-30px; }
+    .app-row-img.bg-pdf::after    { width:80px;height:80px;background:#fca5a5;bottom:-20px;right:-20px; }
+    .app-row-img.bg-bengkel::before { width:120px;height:120px;background:#6ee7b7;top:-30px;right:-30px; }
+    .app-row-img.bg-bengkel::after  { width:80px;height:80px;background:#7dd3fc;bottom:-20px;left:-20px; }
+
+    /* Content panel */
+    .app-row-content {
+      padding: 2.25rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .app-row-content .app-category {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--color-indigo);
+      margin-bottom: 0.65rem;
+    }
+
+    .app-row-content h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: var(--color-text);
+      margin-bottom: 0.6rem;
+    }
+
+    .app-row-content .app-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Feature pills */
+    .app-features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      background: var(--color-bg-subtle);
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--color-border);
+    }
+    .feature-pill .check {
+      color: var(--color-indigo);
+      font-size: 0.7rem;
+    }
+
+    .app-row-content .btn-access {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gradient-brand);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      padding: 0.65rem 1.5rem;
+      border-radius: var(--radius-full);
+      border: none;
+      box-shadow: var(--shadow-indigo-sm);
+      transition: all var(--duration) var(--ease);
+      align-self: flex-start;
+      text-decoration: none !important;
+    }
+    .app-row-content .btn-access:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-indigo);
+      filter: brightness(1.07);
+      color: #fff;
+    }
+
+    /* Free badge */
+    .free-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #16a34a;
+      background: #f0fdf4;
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #bbf7d0;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+    }
+
+    /* Bottom CTA */
+    .app-cta {
+      background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+      border-radius: var(--radius-xl);
+      padding: 3.5rem 2rem;
+      text-align: center;
+      margin-top: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .app-cta::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 200px; height: 200px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      pointer-events: none;
+    }
+    .app-cta::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -40px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+    .app-cta h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.65rem;
+    }
+    .app-cta p {
+      color: rgba(255,255,255,0.82);
+      font-size: 1rem;
+      margin-bottom: 1.75rem;
+    }
+  </style>
 </head>
 
-<body class="work-sans">
+<body class="aplikasi-page">
   <header-component></header-component>
   <nav-component></nav-component>
 
-  <main class="py-4">
-    <section class="container mt-4">
-      <div class="row mb-4">
-        <div class="col-lg-10 mx-auto text-center">
-          <h1 class="h1 fw-bold me-text-primary">Aplikasi</h1>
-          <p class="text-muted mb-3">
-            Aplikasi yang pernah kami buat yang bisa di akses secara gratis
+  <!-- ════ HERO ════ -->
+  <section class="app-hero" aria-labelledby="app-heading">
+    <div class="container">
+      <div class="badge-pill reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0H3"/></svg>
+        Aplikasi Gratis &amp; Siap Pakai
+      </div>
+      <h1 id="app-heading" class="reveal reveal-delay-1">
+        Aplikasi yang Kami<br>
+        <span class="hl">Buat untuk Anda</span>
+      </h1>
+      <p class="reveal reveal-delay-2">
+        Koleksi aplikasi web yang bisa diakses langsung, gratis, tanpa perlu
+        instalasi. Dibuat untuk membantu produktivitas sehari-hari.
+      </p>
+    </div>
+  </section>
+
+  <!-- Stats strip -->
+  <div class="app-stats" aria-label="Statistik aplikasi">
+    <div class="inner">
+      <div class="stat"><span class="stat-val">3+</span><span class="stat-lbl">Aplikasi</span></div>
+      <div class="stat"><span class="stat-val">100%</span><span class="stat-lbl">Gratis</span></div>
+      <div class="stat"><span class="stat-val">Online</span><span class="stat-lbl">Akses 24/7</span></div>
+    </div>
+  </div>
+
+  <!-- ════ MAIN CONTENT ════ -->
+  <main>
+    <div class="container py-5">
+
+      <!-- ── App 1: Tenggoo Scan ── -->
+      <article class="app-row reveal" aria-labelledby="app-scan-title">
+        <div class="app-row-img bg-scan">
+          <div class="app-icon-wrap">
+            <img src="assets/images/tenggoo_scan.png" alt="Ikon Tenggoo Scan" width="56" height="56"
+              onerror="this.src='https://img.icons8.com/color/96/scanner.png'" loading="lazy" />
+          </div>
+        </div>
+        <div class="app-row-content">
+          <span class="app-category">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5z"/></svg>
+            Dokumen &amp; Pemindai
+          </span>
+          <h2 id="app-scan-title">
+            Tenggoo Scan
+            <span class="free-badge">✓ Gratis</span>
+          </h2>
+          <p class="app-desc">
+            Pemindai dokumen modern berbasis web. Deteksi tepi otomatis,
+            hasil berkualitas tinggi, dan konversi PDF instan langsung dari
+            browser tanpa perlu mengunduh aplikasi apapun.
           </p>
+          <div class="app-features" role="list">
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Deteksi Tepi Otomatis</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Konversi ke PDF</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Kualitas Tinggi</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Tanpa Instalasi</span>
+          </div>
+          <a href="https://scan.tenggoo.my.id" class="btn-access" target="_blank" rel="noopener noreferrer"
+            aria-label="Buka Tenggoo Scan di tab baru">
+            Akses Aplikasi
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ── App 2: Tenggoo PDF ── -->
+      <article class="app-row reverse reveal reveal-delay-1" aria-labelledby="app-pdf-title">
+        <div class="app-row-content">
+          <span class="app-category">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9z"/></svg>
+            Alat PDF
+          </span>
+          <h2 id="app-pdf-title">
+            Tenggoo PDF
+            <span class="free-badge">✓ Gratis</span>
+          </h2>
+          <p class="app-desc">
+            Alat serba bisa untuk mengelola file PDF Anda. Kompres ukuran file,
+            gabungkan beberapa dokumen menjadi satu, atau pisahkan halaman
+            tertentu — semua bisa dilakukan dalam hitungan detik.
+          </p>
+          <div class="app-features" role="list">
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Kompres PDF</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Gabung File PDF</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Pisah Halaman</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Aman &amp; Privat</span>
+          </div>
+          <a href="https://pdftools.tenggoo.my.id" class="btn-access" target="_blank" rel="noopener noreferrer"
+            aria-label="Buka Tenggoo PDF di tab baru">
+            Akses Aplikasi
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+          </a>
+        </div>
+        <div class="app-row-img bg-pdf">
+          <div class="app-icon-wrap">
+            <img src="assets/images/tenggoo_pdf.png" alt="Ikon Tenggoo PDF" width="56" height="56"
+              onerror="this.src='https://img.icons8.com/color/96/pdf-assets.png'" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <!-- ── App 3: Bengkel Pro ── -->
+      <article class="app-row reveal reveal-delay-2" aria-labelledby="app-bengkel-title">
+        <div class="app-row-img bg-bengkel">
+          <div class="app-icon-wrap">
+            <img src="assets/images/bengkel_pro.png" alt="Ikon Bengkel Pro" width="56" height="56"
+              onerror="this.src='https://img.icons8.com/color/96/maintenance.png'" loading="lazy" />
+          </div>
+        </div>
+        <div class="app-row-content">
+          <span class="app-category">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l5.654-4.655m5.896-3.83a2.25 2.25 0 0 1 3.183 0l.75.75a2.25 2.25 0 0 1 0 3.183l-2.08 2.08M3.75 15.75l.75.75"/></svg>
+            Manajemen Bisnis
+          </span>
+          <h2 id="app-bengkel-title">
+            Bengkel Pro
+            <span class="free-badge">✓ Gratis</span>
+          </h2>
+          <p class="app-desc">
+            Berdayakan bisnis bengkel Anda dengan sistem kasir dan manajemen
+            operasional yang komprehensif. Bekerja offline maupun online,
+            tanpa biaya berlangganan bulanan sama sekali.
+          </p>
+          <div class="app-features" role="list">
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Kasir &amp; Transaksi</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Manajemen Stok</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Laporan Keuangan</span>
+            <span class="feature-pill" role="listitem"><span class="check" aria-hidden="true">✦</span> Akses Offline</span>
+          </div>
+          <a href="https://bengkelpro.tenggoo.my.id/" class="btn-access" target="_blank" rel="noopener noreferrer"
+            aria-label="Buka Bengkel Pro di tab baru">
+            Akses Aplikasi
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- ════ BOTTOM CTA ════ -->
+      <div class="app-cta reveal">
+        <h2>Tertarik dengan Source Code-nya?</h2>
+        <p>Pelajari cara kami membangun aplikasi ini dari source code yang tersedia secara open source.</p>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:0.75rem;position:relative;z-index:1;">
+          <a href="project.html" class="btn-cta-white">
+            Lihat Source Code
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+          </a>
+          <a href="contact.html" style="display:inline-flex;align-items:center;gap:0.5rem;background:rgba(255,255,255,0.15);color:#fff;font-size:0.9rem;font-weight:600;padding:0.65rem 1.5rem;border-radius:var(--radius-full);border:1.5px solid rgba(255,255,255,0.3);transition:all 0.25s ease;text-decoration:none;">
+            Hubungi Kami
+          </a>
         </div>
       </div>
 
-      <div class="row g-3">
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/images/tenggoo_scan.png" alt="Tenggoo Scan" width="28" height="28" />
-                <h2 class="h5 mb-0">Tenggoo Scan</h2>
-              </div>
-              <p class="text-muted mb-3">
-                Pemindai dokumen Android modern. Deteksi tepi otomatis,
-                kualitas tinggi, dan konversi PDF instan dalam genggaman Anda.
-              </p>
-              <a href="https://scan.tenggoo.my.id" class="btn btn-sm me-btn-gold mt-auto align-self-start"
-                target="_blank" rel="noopener noreferrer">Akses Aplikasi</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/images/tenggoo_pdf.png" alt="Tenggoo PDF" width="28" height="28" />
-                <h2 class="h5 mb-0">Tenggoo PDF</h2>
-              </div>
-              <p class="text-muted mb-3">
-                Alat praktis untuk kompres PDF, menggabungkan beberapa file,
-                dan memisahkan halaman PDF dengan cepat.
-              </p>
-              <a href="https://pdftools.tenggoo.my.id" class="btn btn-sm me-btn-gold mt-auto align-self-start"
-                target="_blank" rel="noopener noreferrer">Akses Aplikasi</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card h-100 border-0 shadow-sm">
-            <div class="card-body d-flex flex-column">
-              <div class="d-flex align-items-center gap-2 mb-2">
-                <img src="assets/images/bengkel_pro.png" alt="Bengkel Pro" width="28" height="28" />
-                <h2 class="h5 mb-0">Bengkel Pro</h2>
-              </div>
-              <p class="text-muted mb-3">
-                Berdayakan bisnis bengkel Anda dengan aplikasi kasir dan operasional komprehensif yang berjalan secepat
-                kilat tanpa perlu koneksi internet atau biaya berlangganan.
-              </p>
-              <a href="https://bengkelpro.tenggoo.my.id/" class="btn btn-sm me-btn-gold mt-auto align-self-start"
-                target="_blank" rel="noopener noreferrer">Akses Aplikasi</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
+    </div><!-- /container -->
   </main>
 
   <footer-component></footer-component>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
