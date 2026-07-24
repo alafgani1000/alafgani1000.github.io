@@ -12,95 +12,772 @@
   <meta name="author" content="Ghani" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tenggoo.my.id/contact.html" />
   <meta property="og:title" content="Kontak Jasa Pembuatan Aplikasi Web Laravel | Teng Gooo" />
-  <meta property="og:description"
-    content="Hubungi Teng Gooo untuk jasa pembuatan aplikasi web Laravel, request fitur, konsultasi project, dan kolaborasi pengembangan website." />
+  <meta property="og:description" content="Hubungi Teng Gooo untuk jasa pembuatan aplikasi web Laravel, request fitur, konsultasi project, dan kolaborasi pengembangan website." />
   <meta property="og:image" content="https://tenggoo.my.id/assets/images/quiz/home.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://tenggoo.my.id/contact.html" />
   <meta property="twitter:title" content="Kontak Jasa Pembuatan Aplikasi Web Laravel | Teng Gooo" />
-  <meta property="twitter:description"
-    content="Hubungi Teng Gooo untuk jasa pembuatan aplikasi web Laravel, konsultasi fitur, dan kolaborasi pengembangan website." />
+  <meta property="twitter:description" content="Hubungi Teng Gooo untuk jasa pembuatan aplikasi web Laravel, konsultasi fitur, dan kolaborasi pengembangan website." />
   <meta property="twitter:image" content="https://tenggoo.my.id/assets/images/quiz/home.png" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
-  <link class="work-sans" rel="canonical" href="https://tenggoo.my.id/contact.html" />
-  <script src="assets/js/custom_element.js?v=0.0.2" defer></script>
+  <link rel="canonical" href="https://tenggoo.my.id/contact.html" />
+  <script src="assets/js/custom_element.js?v=2.0.0" defer></script>
+
+  <style>
+    /* ── Contact Page Specific Styles ── */
+
+    .contact-hero {
+      background: var(--gradient-hero);
+      padding: 4.5rem 0 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366f1' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+
+    .contact-hero .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(99,102,241,0.08);
+      color: var(--color-indigo);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(99,102,241,0.2);
+      margin-bottom: 1.25rem;
+    }
+
+    .contact-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: var(--color-text);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .contact-hero h1 .brand-name {
+      font-family: 'Pacifico', cursive;
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .contact-hero p {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ── Channel Cards ── */
+    .contact-channels {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .contact-channels { grid-template-columns: 1fr; }
+    }
+
+    .channel-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.5rem;
+      text-align: center;
+      transition: all var(--duration) var(--ease);
+      text-decoration: none !important;
+      display: block;
+      cursor: pointer;
+    }
+
+    .channel-card:hover {
+      border-color: var(--color-border-hover);
+      box-shadow: var(--shadow-indigo);
+      transform: translateY(-4px);
+    }
+
+    .channel-card .ch-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+
+    .channel-card .ch-icon.indigo  { background: rgba(99,102,241,0.1); }
+    .channel-card .ch-icon.green   { background: rgba(22,163,74,0.1); }
+    .channel-card .ch-icon.slate   { background: rgba(100,116,139,0.1); }
+
+    .channel-card .ch-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--color-text-faint);
+      margin-bottom: 0.3rem;
+    }
+
+    .channel-card .ch-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 0.25rem;
+    }
+
+    .channel-card .ch-desc {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ── Main layout (form + info) ── */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; }
+    }
+
+    /* ── Contact Form ── */
+    .contact-form-wrap {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 2.25rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .contact-form-wrap h2 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.015em;
+      color: var(--color-text);
+      margin-bottom: 0.35rem;
+    }
+
+    .contact-form-wrap .form-subtitle {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1.75rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text);
+      margin-bottom: 0.45rem;
+    }
+
+    .form-group label .required {
+      color: #ef4444;
+      margin-left: 2px;
+    }
+
+    .form-control-custom {
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: var(--color-text);
+      background: var(--color-bg-subtle);
+      transition: all var(--duration) var(--ease);
+      outline: none;
+      resize: vertical;
+    }
+
+    .form-control-custom::placeholder {
+      color: var(--color-text-faint);
+    }
+
+    .form-control-custom:focus {
+      border-color: var(--color-indigo);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    @media (max-width: 576px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    .topic-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .topic-chip {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-text-muted);
+      background: var(--color-bg-subtle);
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      border: 1.5px solid var(--color-border);
+      cursor: pointer;
+      transition: all var(--duration) var(--ease);
+      user-select: none;
+    }
+
+    .topic-chip:hover,
+    .topic-chip.active {
+      background: rgba(99,102,241,0.08);
+      border-color: var(--color-indigo-light);
+      color: var(--color-indigo);
+    }
+
+    .topic-chip.active {
+      background: var(--gradient-brand);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .btn-send {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      background: var(--gradient-brand);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.85rem 2rem;
+      border-radius: var(--radius-md);
+      border: none;
+      box-shadow: var(--shadow-indigo-sm);
+      transition: all var(--duration) var(--ease);
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .btn-send:hover {
+      filter: brightness(1.07);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-indigo);
+    }
+
+    .btn-send:active {
+      transform: translateY(0);
+    }
+
+    /* ── Info Panel ── */
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .info-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+    }
+
+    .info-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .info-card h3 .icon-wrap {
+      width: 30px;
+      height: 30px;
+      border-radius: 8px;
+      background: rgba(99,102,241,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .info-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .info-item .info-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-indigo);
+      margin-top: 0.4rem;
+      flex-shrink: 0;
+    }
+
+    .info-item p {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .info-item strong {
+      color: var(--color-text);
+      font-weight: 600;
+    }
+
+    /* Response time badge */
+    .response-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: #f0fdf4;
+      color: #16a34a;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      border: 1px solid #bbf7d0;
+    }
+
+    .response-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #16a34a;
+      animation: pulse-dot 2s ease infinite;
+    }
+
+    /* CTA Banner bottom */
+    .contact-cta-bottom {
+      background: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
+      border-radius: var(--radius-xl);
+      padding: 3rem 2rem;
+      text-align: center;
+      margin-top: 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact-cta-bottom::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      pointer-events: none;
+    }
+
+    .contact-cta-bottom::after {
+      content: '';
+      position: absolute;
+      bottom: -50px;
+      left: -30px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+
+    .contact-cta-bottom h2 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-cta-bottom p {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Form success state */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .form-success .success-icon {
+      width: 64px;
+      height: 64px;
+      background: #f0fdf4;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+  </style>
 </head>
 
-<body class="work-sans contact-page">
-  <!-- start header -->
+<body class="contact-page">
   <header-component></header-component>
-  <!-- end header -->
-
-  <!-- start nav -->
   <nav-component></nav-component>
-  <!-- end nav -->
 
-  <!-- content -->
-  <main class="py-4">
-    <section class="container mt-4">
-      <div class="row mb-4">
-        <div class="col-lg-10 mx-auto py-2 text-center">
-          <h1 class="h1 fw-bold me-text-primary">Kontak <span class="pacifico-regular">Teng Gooo</span></h1>
-          <p class="text-muted mb-0">Diskusi kebutuhan aplikasi web Laravel, kolaborasi project, atau request pengembangan fitur.</p>
-        </div>
+  <!-- ════ HERO ════ -->
+  <section class="contact-hero" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="badge-pill reveal">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+        Respon dalam 1–2 hari kerja
       </div>
+      <h1 id="contact-heading" class="reveal reveal-delay-1">
+        Mari Berkolaborasi<br>
+        bersama <span class="brand-name">Teng Gooo</span>
+      </h1>
+      <p class="reveal reveal-delay-2">
+        Punya ide project, butuh konsultasi teknis, atau ingin berkolaborasi?
+        Kami siap mendengar dan membantu Anda.
+      </p>
+    </div>
+  </section>
 
-      <div class="row g-4">
-        <div class="col-lg-6">
-          <article class="contact-card h-100">
-            <h2 class="h4 mb-3">Tentang Website Ini</h2>
-            <p class="mb-0">
-              Website ini berisi publikasi aplikasi dan template open source yang bisa dipelajari serta digunakan
-              secara gratis untuk kebutuhan pengembangan web.
-            </p>
-          </article>
+  <main>
+    <div class="container py-5">
+
+      <!-- ════ 3 CHANNEL CARDS ════ -->
+      <div class="contact-channels reveal">
+
+        <!-- Email -->
+        <a href="mailto:selaicode101@gmail.com" class="channel-card" id="channel-email" aria-label="Kirim email ke selaicode101@gmail.com">
+          <div class="ch-icon indigo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#6366f1" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+            </svg>
+          </div>
+          <div class="ch-label">Email</div>
+          <div class="ch-value">selaicode101@gmail.com</div>
+          <div class="ch-desc">Untuk konsultasi &amp; request fitur</div>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/alafgani1000" target="_blank" rel="noopener" class="channel-card" id="channel-github" aria-label="Kunjungi GitHub alafgani1000">
+          <div class="ch-icon slate">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="#475569" viewBox="0 0 16 16" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+          </div>
+          <div class="ch-label">GitHub</div>
+          <div class="ch-value">@alafgani1000</div>
+          <div class="ch-desc">Lihat repository &amp; open issues</div>
+        </a>
+
+        <!-- Response Time -->
+        <div class="channel-card" style="cursor:default;" aria-label="Waktu respons">
+          <div class="ch-icon green">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#16a34a" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/>
+            </svg>
+          </div>
+          <div class="ch-label">Waktu Respons</div>
+          <div class="ch-value" style="margin-bottom:0.5rem;">1 – 2 Hari Kerja</div>
+          <div style="display:flex;justify-content:center;">
+            <span class="response-badge">
+              <span class="dot" aria-hidden="true"></span>
+              Aktif &amp; Responsif
+            </span>
+          </div>
         </div>
 
-        <div class="col-lg-6">
-          <article class="contact-card h-100">
-            <h2 class="h4 mb-3">Butuh Bantuan atau Kolaborasi?</h2>
-            <p class="mb-3">
-              Silakan hubungi kami untuk request aplikasi, konsultasi fitur, atau kolaborasi proyek.
-            </p>
-            <div class="d-flex flex-wrap gap-2">
-              <a href="mailto:selaicode101@gmail.com" class="btn me-btn-gold px-4 py-2 rounded-pill fw-bold">Kirim
-                Email</a>
-              <a href="https://github.com/alafgani1000" target="_blank" rel="noopener"
-                class="btn btn-outline-dark px-4 py-2 rounded-pill fw-bold">GitHub</a>
+      </div><!-- /contact-channels -->
+
+
+      <!-- ════ MAIN LAYOUT: FORM + INFO ════ -->
+      <div class="contact-layout reveal">
+
+        <!-- ── Contact Form ── -->
+        <div class="contact-form-wrap" id="contact-form-section">
+          <h2>Kirim Pesan</h2>
+          <p class="form-subtitle">Isi form berikut dan kami akan menghubungi Anda secepatnya.</p>
+
+          <!-- Success state (hidden by default) -->
+          <div class="form-success" id="form-success" role="alert" aria-live="polite">
+            <div class="success-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="#16a34a" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
             </div>
-          </article>
-        </div>
+            <h3 style="font-size:1.1rem;font-weight:700;color:var(--color-text);margin-bottom:0.5rem;">Pesan Terkirim!</h3>
+            <p style="font-size:0.875rem;color:var(--color-text-muted);">Terima kasih telah menghubungi kami. Kami akan membalas dalam 1–2 hari kerja.</p>
+          </div>
 
-        <div class="col-lg-12">
-          <article class="contact-card text-center">
-            <p class="mb-2">Email utama:</p>
-            <a class="contact-email-link" href="mailto:selaicode101@gmail.com">selaicode101@gmail.com</a>
-          </article>
-        </div>
+          <form id="contact-form" action="mailto:selaicode101@gmail.com" method="POST" enctype="text/plain" novalidate>
+
+            <!-- Topik -->
+            <div class="form-group">
+              <label>Topik Pesan</label>
+              <div class="topic-chips" role="group" aria-label="Pilih topik">
+                <button type="button" class="topic-chip active" data-topic="Konsultasi Project" aria-pressed="true">💬 Konsultasi Project</button>
+                <button type="button" class="topic-chip" data-topic="Request Fitur" aria-pressed="false">✨ Request Fitur</button>
+                <button type="button" class="topic-chip" data-topic="Kolaborasi" aria-pressed="false">🤝 Kolaborasi</button>
+                <button type="button" class="topic-chip" data-topic="Bug Report" aria-pressed="false">🐛 Bug Report</button>
+                <button type="button" class="topic-chip" data-topic="Lainnya" aria-pressed="false">📌 Lainnya</button>
+              </div>
+              <input type="hidden" id="selected-topic" name="Topik" value="Konsultasi Project" />
+            </div>
+
+            <!-- Nama & Email -->
+            <div class="form-row">
+              <div class="form-group" style="margin-bottom:0">
+                <label for="contact-name">Nama <span class="required" aria-label="wajib diisi">*</span></label>
+                <input type="text" id="contact-name" name="Nama" class="form-control-custom"
+                  placeholder="Nama Anda" required autocomplete="name" />
+              </div>
+              <div class="form-group" style="margin-bottom:0">
+                <label for="contact-email">Email <span class="required" aria-label="wajib diisi">*</span></label>
+                <input type="email" id="contact-email" name="Email" class="form-control-custom"
+                  placeholder="email@domain.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <!-- Judul -->
+            <div class="form-group">
+              <label for="contact-subject">Judul / Subjek <span class="required" aria-label="wajib diisi">*</span></label>
+              <input type="text" id="contact-subject" name="Judul" class="form-control-custom"
+                placeholder="Misal: Request Fitur Tambahan pada Quiz App" required />
+            </div>
+
+            <!-- Pesan -->
+            <div class="form-group">
+              <label for="contact-message">Pesan <span class="required" aria-label="wajib diisi">*</span></label>
+              <textarea id="contact-message" name="Pesan" class="form-control-custom"
+                rows="5" placeholder="Ceritakan kebutuhan Anda secara singkat..." required></textarea>
+            </div>
+
+            <!-- Error state -->
+            <div id="form-error" role="alert" aria-live="polite"
+              style="display:none; font-size:0.85rem; color:#ef4444; margin-bottom:0.75rem; padding:0.6rem 0.9rem; background:#fef2f2; border-radius:0.5rem; border:1px solid #fecaca;">
+              Mohon lengkapi semua field yang wajib diisi.
+            </div>
+
+            <button type="submit" class="btn-send" id="btn-send" aria-label="Kirim pesan">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12zm0 0h7.5"/>
+              </svg>
+              Kirim Pesan
+            </button>
+          </form>
+        </div><!-- /contact-form-wrap -->
+
+
+        <!-- ── Info Panel ── -->
+        <div class="contact-info-panel reveal reveal-delay-1">
+
+          <!-- About -->
+          <div class="info-card">
+            <h3>
+              <span class="icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#6366f1" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0zm-9-3.75h.008v.008H12V8.25z"/></svg>
+              </span>
+              Tentang Kami
+            </h3>
+            <div class="info-item">
+              <span class="info-dot" aria-hidden="true"></span>
+              <p>Kami adalah developer independen yang fokus pada pengembangan aplikasi web berbasis <strong>Laravel</strong> dan ekosistemnya.</p>
+            </div>
+            <div class="info-item">
+              <span class="info-dot" aria-hidden="true"></span>
+              <p>Semua source code yang tersedia di situs ini bersifat <strong>open source</strong> dan dapat digunakan secara gratis.</p>
+            </div>
+            <div class="info-item">
+              <span class="info-dot" aria-hidden="true"></span>
+              <p>Kami membuka peluang kolaborasi untuk membangun produk digital yang bermanfaat bagi komunitas.</p>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="info-card">
+            <h3>
+              <span class="icon-wrap" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#6366f1" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0zm-9 5.25h.008v.008H12v-.008z"/></svg>
+              </span>
+              FAQ
+            </h3>
+            <div class="faq-list" id="faq-list">
+
+              <div class="faq-item" style="border-bottom:1px solid var(--color-border);">
+                <button class="faq-toggle" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;padding:0.85rem 0;cursor:pointer;font-family:var(--font-body);font-size:0.875rem;font-weight:600;color:var(--color-text);text-align:left;gap:0.5rem;" type="button">
+                  Apakah source code benar-benar gratis?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;transition:transform 0.2s ease;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                </button>
+                <div class="faq-body" style="display:none;padding-bottom:0.85rem;">
+                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Ya, semua source code yang tersedia di situs ini bersifat open source dan dapat digunakan, dimodifikasi, serta didistribusikan secara gratis.</p>
+                </div>
+              </div>
+
+              <div class="faq-item" style="border-bottom:1px solid var(--color-border);">
+                <button class="faq-toggle" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;padding:0.85rem 0;cursor:pointer;font-family:var(--font-body);font-size:0.875rem;font-weight:600;color:var(--color-text);text-align:left;gap:0.5rem;" type="button">
+                  Apakah bisa request fitur baru?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;transition:transform 0.2s ease;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                </button>
+                <div class="faq-body" style="display:none;padding-bottom:0.85rem;">
+                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Tentu! Anda bisa request fitur melalui form kontak di sini, atau langsung buka issue di GitHub repository yang bersangkutan.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-toggle" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;padding:0.85rem 0;cursor:pointer;font-family:var(--font-body);font-size:0.875rem;font-weight:600;color:var(--color-text);text-align:left;gap:0.5rem;" type="button">
+                  Berapa lama waktu respons pesan?
+                  <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;transition:transform 0.2s ease;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                </button>
+                <div class="faq-body" style="display:none;padding-bottom:0.85rem;">
+                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Kami biasanya merespons pesan email dalam 1–2 hari kerja. Untuk pertanyaan via GitHub issue, bisa lebih cepat.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- /contact-info-panel -->
+      </div><!-- /contact-layout -->
+
+      <!-- ════ BOTTOM CTA ════ -->
+      <div class="contact-cta-bottom reveal">
+        <h2>Jelajahi Koleksi Source Code</h2>
+        <p>Download, pelajari, dan kembangkan bersama komunitas open source kami.</p>
+        <a href="project.html" class="btn-cta-white">
+          Lihat Source Code
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+        </a>
       </div>
-    </section>
+
+    </div><!-- /container -->
   </main>
 
-  <!-- start footer -->
   <footer-component></footer-component>
-  <!-- end footer -->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      /* ── Topic chips ── */
+      const chips = document.querySelectorAll('.topic-chip');
+      const topicInput = document.getElementById('selected-topic');
+      chips.forEach(chip => {
+        chip.addEventListener('click', function () {
+          chips.forEach(c => { c.classList.remove('active'); c.setAttribute('aria-pressed', 'false'); });
+          this.classList.add('active');
+          this.setAttribute('aria-pressed', 'true');
+          if (topicInput) topicInput.value = this.getAttribute('data-topic');
+        });
+      });
+
+      /* ── Form validation & submit ── */
+      const form    = document.getElementById('contact-form');
+      const success = document.getElementById('form-success');
+      const errMsg  = document.getElementById('form-error');
+
+      if (form) {
+        form.addEventListener('submit', function (e) {
+          const name    = document.getElementById('contact-name').value.trim();
+          const email   = document.getElementById('contact-email').value.trim();
+          const subject = document.getElementById('contact-subject').value.trim();
+          const msg     = document.getElementById('contact-message').value.trim();
+          const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!name || !email || !subject || !msg || !emailRe.test(email)) {
+            e.preventDefault();
+            if (errMsg) errMsg.style.display = 'block';
+            return;
+          }
+          if (errMsg) errMsg.style.display = 'none';
+          // Let mailto: proceed (opens mail client)
+        });
+      }
+
+      /* ── FAQ accordion ── */
+      const toggles = document.querySelectorAll('.faq-toggle');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', function () {
+          const body    = this.nextElementSibling;
+          const chevron = this.querySelector('.faq-chevron');
+          const isOpen  = this.getAttribute('aria-expanded') === 'true';
+
+          // Close all others
+          toggles.forEach(t => {
+            if (t !== this) {
+              t.setAttribute('aria-expanded', 'false');
+              t.nextElementSibling.style.display = 'none';
+              const ch = t.querySelector('.faq-chevron');
+              if (ch) ch.style.transform = '';
+            }
+          });
+
+          if (isOpen) {
+            this.setAttribute('aria-expanded', 'false');
+            body.style.display = 'none';
+            if (chevron) chevron.style.transform = '';
+          } else {
+            this.setAttribute('aria-expanded', 'true');
+            body.style.display = 'block';
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+
+    });
+  </script>
 </body>
 
 </html>
-
