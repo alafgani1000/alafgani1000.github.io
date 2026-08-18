@@ -199,6 +199,31 @@ img {
   color: #fff !important;
 }
 
+/* CTA button used across multiple pages */
+.btn-cta-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: #fff;
+  color: var(--color-indigo) !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-full);
+  border: 1.5px solid rgba(99,102,241,0.18);
+  line-height: 1.4;
+  box-shadow: 0 4px 16px rgba(15,23,42,0.12);
+  transition: all var(--duration) var(--ease);
+  cursor: pointer;
+}
+
+.btn-cta-white:hover {
+  transform: translateY(-2px);
+  color: var(--color-indigo-dark) !important;
+  border-color: rgba(99,102,241,0.3);
+  box-shadow: 0 8px 24px rgba(15,23,42,0.16);
+}
+
 .btn-success {
   display: inline-flex !important;
   align-items: center !important;
@@ -921,23 +946,7 @@ img {
 }
 
 .tg-cta .btn-cta-white {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: #fff;
-  color: var(--color-indigo) !important;
-  font-weight: 700;
-  font-size: 0.9rem;
-  padding: 0.75rem 2rem;
-  border-radius: var(--radius-full);
-  border: none;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-  transition: all var(--duration) var(--ease);
-}
-
-.tg-cta .btn-cta-white:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  border-color: transparent;
 }
 
 /* 13. FOOTER */
