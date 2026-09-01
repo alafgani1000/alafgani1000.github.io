@@ -1,0 +1,17 @@
+{
+  "name": "Tenggoo — Tools Online Gratis",
+  "short_name": "Tenggoo",
+  "description": "Tools online gratis untuk membuat CV profesional, mengelola PDF, dan menjelajahi source code open source.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081120",
+  "theme_color": "#081120",
+  "icons": [
+    {
+      "src": "/assets/images/tenggoo-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

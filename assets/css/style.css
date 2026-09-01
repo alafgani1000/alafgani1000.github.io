@@ -1655,6 +1655,13 @@ body { background: #f7f8fc; }
   font-weight: 800;
 }
 
+.brand-v3 .brand-mark img,
+.footer-brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .brand-v3 .brand-copy { display: flex; flex-direction: column; line-height: 1.05; }
 .brand-v3 .brand-copy strong { color: #0b1220; font-size: 1rem; font-weight: 800; letter-spacing: -.025em; }
 .brand-v3 .brand-copy small { margin-top: .28rem; color: #64748b; font-size: .62rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }

@@ -28,8 +28,8 @@ class NavComponent extends HTMLElement {
       <nav class="tg-navbar" id="tg-navbar" role="navigation" aria-label="Main navigation">
         <div class="navbar-inner">
           <!-- Brand -->
-          <a href="${home}" class="brand brand-v3" aria-label="Tenggoo Home">
-            <span class="brand-mark" aria-hidden="true">T</span>
+          <a href="${home}" class="brand brand-v3" aria-label="Tenggoo — Halaman utama">
+            <span class="brand-mark" aria-hidden="true"><img src="/assets/images/tenggoo-mark.svg" alt="" width="38" height="38"></span>
             <span class="brand-copy">
               <strong>Tenggoo</strong>
               <small>Tools that work</small>
@@ -135,8 +135,8 @@ class FooterComponent extends HTMLElement {
 
             <!-- Brand -->
             <div class="footer-brand">
-              <a href="${prefix}index.html" class="logo footer-brand-v3" aria-label="Tenggoo Home">
-                <span class="footer-brand-mark" aria-hidden="true">T</span>
+              <a href="${prefix}index.html" class="logo footer-brand-v3" aria-label="Tenggoo — Halaman utama">
+                <span class="footer-brand-mark" aria-hidden="true"><img src="/assets/images/tenggoo-mark.svg" alt="" width="34" height="34"></span>
                 <span>Tenggoo</span>
               </a>
               <p>

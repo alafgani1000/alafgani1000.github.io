@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Tenggoo</title>
+  <desc id="desc">Monogram huruf T dengan warna indigo dan sian.</desc>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="6" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111c33"/>
+      <stop offset="1" stop-color="#081120"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="15" y1="15" x2="47" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity=".12"/>
+  <path d="M15 17.5A4.5 4.5 0 0 1 19.5 13h28a4.5 4.5 0 0 1 4.5 4.5v4a4.5 4.5 0 0 1-4.5 4.5h-28a4.5 4.5 0 0 1-4.5-4.5v-4Z" fill="url(#accent)"/>
+  <path d="M27 26h14v15.5a5.5 5.5 0 0 1-2.5 4.62L27 53V26Z" fill="url(#accent)"/>
+</svg>
