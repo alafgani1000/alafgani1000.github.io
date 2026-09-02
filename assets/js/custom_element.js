@@ -7,12 +7,13 @@ class MyCustomElement extends HTMLElement { }
 /* ── NAVBAR COMPONENT ── */
 class NavComponent extends HTMLElement {
   static get observedAttributes() {
-    return ['home', 'aplikasi', 'project', 'theme', 'contact'];
+    return ['home', 'aplikasi', 'blog', 'project', 'theme', 'contact'];
   }
 
   connectedCallback() {
     const home     = this.getAttribute('home')     || 'index.html';
     const aplikasi = this.getAttribute('aplikasi') || 'aplikasi.html';
+    const blog     = this.getAttribute('blog')     || (window.location.pathname.includes('/blogs/') || window.location.pathname.includes('/project/') || window.location.pathname.includes('/themes/') ? '../blog.html' : 'blog.html');
     const project  = this.getAttribute('project')  || 'project.html';
     const theme    = this.getAttribute('theme')    || 'theme.html';
     const contact  = this.getAttribute('contact')  || 'contact.html';
@@ -20,6 +21,7 @@ class NavComponent extends HTMLElement {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const isHome     = currentPage === 'index.html' || currentPage === '' || currentPage === '/';
     const isAplikasi = currentPage === 'aplikasi.html';
+    const isBlog     = currentPage === 'blog.html' || window.location.pathname.includes('/blogs/');
     const isProject  = currentPage === 'project.html';
     const isTheme    = currentPage === 'theme.html';
     const isContact  = currentPage === 'contact.html';
@@ -40,6 +42,7 @@ class NavComponent extends HTMLElement {
           <ul class="nav-links" id="nav-links" role="list">
             <li><a href="${home}"     class="${isHome     ? 'active' : ''}" ${isHome     ? 'aria-current="page"' : ''}>Home</a></li>
             <li><a href="${aplikasi}" class="${isAplikasi ? 'active' : ''}" ${isAplikasi ? 'aria-current="page"' : ''}>Aplikasi</a></li>
+            <li><a href="${blog}"     class="${isBlog     ? 'active' : ''}" ${isBlog     ? 'aria-current="page"' : ''}>Blog</a></li>
             <li><a href="${project}"  class="${isProject  ? 'active' : ''}" ${isProject  ? 'aria-current="page"' : ''}>Source Code</a></li>
             <li><a href="${theme}"    class="${isTheme    ? 'active' : ''}" ${isTheme    ? 'aria-current="page"' : ''}>Tema</a></li>
             <li><a href="${contact}"  class="${isContact  ? 'active' : ''}" ${isContact  ? 'aria-current="page"' : ''}>Kontak</a></li>
@@ -126,7 +129,7 @@ class HeaderComponent extends HTMLElement {
 class FooterComponent extends HTMLElement {
   connectedCallback() {
     const path   = window.location.pathname.replace(/\\/g, '/');
-    const prefix = (path.includes('/project/') || path.includes('/themes/')) ? '../' : '';
+    const prefix = (path.includes('/blogs/') || path.includes('/project/') || path.includes('/themes/')) ? '../' : '';
 
     this.innerHTML = `
       <footer class="tg-footer" role="contentinfo">
@@ -151,6 +154,7 @@ class FooterComponent extends HTMLElement {
               <ul role="list">
                 <li><a href="${prefix}index.html">Home</a></li>
                 <li><a href="${prefix}aplikasi.html">Aplikasi</a></li>
+                <li><a href="${prefix}blog.html">Blog</a></li>
                 <li><a href="${prefix}project.html">Source Code</a></li>
                 <li><a href="${prefix}theme.html">Tema</a></li>
                 <li><a href="${prefix}contact.html">Kontak</a></li>
