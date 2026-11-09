@@ -4,11 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kontak &amp; Kolaborasi Pengembangan Web | Tenggoo</title>
+  <title>Kontak Tenggoo – Pertanyaan, Masukan, dan Kolaborasi</title>
   <meta name="description"
-    content="Hubungi Tenggoo untuk konsultasi, kolaborasi, request fitur, dan pengembangan aplikasi web sesuai kebutuhan Anda." />
-  <meta name="keywords"
-    content="kontak jasa laravel, jasa pembuatan aplikasi web, konsultasi web development, request aplikasi, kolaborasi project website" />
+    content="Hubungi Tenggoo untuk pertanyaan, masukan produk, kolaborasi, dan kebutuhan pengembangan aplikasi web." />
   <meta name="author" content="Ghani" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#081120" />
@@ -18,16 +16,16 @@
   <meta property="og:site_name" content="Tenggoo" />
   <meta property="og:locale" content="id_ID" />
   <meta property="og:url" content="https://tenggoo.my.id/contact.html" />
-  <meta property="og:title" content="Kontak &amp; Kolaborasi Pengembangan Web | Tenggoo" />
-  <meta property="og:description" content="Hubungi Tenggoo untuk konsultasi, kolaborasi, request fitur, dan pengembangan aplikasi web." />
+  <meta property="og:title" content="Kontak Tenggoo – Pertanyaan, Masukan, dan Kolaborasi" />
+  <meta property="og:description" content="Hubungi Tenggoo untuk pertanyaan, masukan produk, kolaborasi, dan pengembangan aplikasi web." />
   <meta property="og:image" content="https://tenggoo.my.id/assets/images/og-tenggoo-v3.png" />
   <meta property="og:image:alt" content="Kontak dan kolaborasi dengan Tenggoo" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://tenggoo.my.id/contact.html" />
-  <meta property="twitter:title" content="Kontak &amp; Kolaborasi Pengembangan Web | Tenggoo" />
-  <meta property="twitter:description" content="Hubungi Tenggoo untuk konsultasi, request fitur, dan kolaborasi pengembangan website." />
+  <meta property="twitter:title" content="Kontak Tenggoo – Pertanyaan, Masukan, dan Kolaborasi" />
+  <meta property="twitter:description" content="Hubungi Tenggoo untuk pertanyaan, masukan produk, kolaborasi, dan pengembangan aplikasi web." />
   <meta property="twitter:image" content="https://tenggoo.my.id/assets/images/og-tenggoo-v3.png" />
 
   <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
@@ -38,9 +36,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20260903" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261109b" />
   <link rel="canonical" href="https://tenggoo.my.id/contact.html" />
-  <script src="assets/js/custom_element.js?v=2.1.0" defer></script>
+  <script src="assets/js/custom_element.js?v=2.2.5" defer></script>
 
   <style>
     /* ── Contact Page Specific Styles ── */
@@ -473,6 +471,58 @@
       margin: 0 auto 1rem;
     }
   </style>
+  <style>
+    /* Contact v4: clear paths to reach Tenggoo, with the same product language. */
+    .contact-page { background: #f8fafc; }
+    .contact-page .contact-hero {
+      padding: 5.5rem 0 5rem;
+      text-align: left;
+      background: #081120 !important;
+    }
+    .contact-page .contact-hero::before { display: none; }
+    .contact-page .contact-hero .container, .contact-page main > .container { max-width: 1120px; }
+    .contact-page .contact-hero .badge-pill { color: #92ded4; background: transparent; border-color: #34515c; }
+    .contact-page .contact-hero h1 { max-width: 700px; color: #fff; font-size: clamp(2.35rem, 5vw, 4rem); letter-spacing: -.06em; }
+    .contact-page .contact-hero h1 .brand-name { color: #92ded4; background: none; -webkit-text-fill-color: currentColor; font-family: var(--font-body); }
+    .contact-page .contact-hero p { margin: 0; color: #bdc9d8; text-align: left; }
+    .contact-page main > .container { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+
+    .contact-page .contact-channels { gap: 16px; margin-bottom: 56px; }
+    .contact-page .channel-card { padding: 24px; background: #fff; border-color: #dfe6ee; border-radius: 16px; box-shadow: none; }
+    .contact-page .channel-card:hover { border-color: #9ccfc8; box-shadow: none; transform: translateY(-2px); }
+    .contact-page .channel-card .ch-icon { width: 48px; height: 48px; margin-bottom: 14px; background: #e8f5f2 !important; border-radius: 12px; }
+    .contact-page .channel-card .ch-icon svg { stroke: #0f766e !important; }
+    .contact-page .channel-card .ch-icon.slate svg { fill: #0f766e; }
+    .contact-page .channel-card .ch-label { color: #0f766e; }
+    .contact-page .channel-card .ch-value { color: #081120; }
+    .contact-page .response-badge { color: #0f766e; background: #e8f5f2; border-color: #b9ded8; }
+    .contact-page .response-badge .dot { background: #0f766e; animation: none; }
+
+    .contact-page .contact-layout { gap: 20px; }
+    .contact-page .contact-form-wrap, .contact-page .info-card { padding: clamp(24px, 4vw, 36px); background: #fff; border-color: #dfe6ee; border-radius: 16px; box-shadow: none; }
+    .contact-page .contact-form-wrap h2, .contact-page .info-card h3 { color: #081120; }
+    .contact-page .form-control-custom { background: #f8fafc; border-color: #dfe6ee; border-radius: 10px; }
+    .contact-page .form-control-custom:focus { background: #fff; border-color: #0f766e; box-shadow: 0 0 0 3px rgba(15,118,110,.12); }
+    .contact-page .topic-chip { color: #475569; background: #fff; border-color: #dfe6ee; border-radius: 9px; }
+    .contact-page .topic-chip:hover, .contact-page .topic-chip.active { color: #fff; background: #081120; border-color: #081120; }
+    .contact-page .btn-send { background: #081120; border-radius: 10px; box-shadow: none; }
+    .contact-page .btn-send:hover { background: #10233d; box-shadow: none; transform: none; }
+    .contact-page .info-card h3 .icon-wrap { background: #e8f5f2; }
+    .contact-page .info-card h3 .icon-wrap svg { stroke: #0f766e; }
+    .contact-page .info-item .info-dot { background: #0f766e; }
+    .contact-page .faq-item { border-color: #dfe6ee !important; }
+
+    .contact-page .contact-cta-bottom { padding: clamp(2.25rem, 5vw, 4rem); background: #081120 !important; border-radius: 18px; }
+    .contact-page .contact-cta-bottom::before, .contact-page .contact-cta-bottom::after { display: none; }
+    .contact-page .contact-cta-bottom h2 { letter-spacing: -.04em; }
+    .contact-page .contact-cta-bottom .btn-cta-white { border-radius: 10px; }
+
+    @media (max-width: 768px) {
+      .contact-page .contact-hero { padding: 4rem 0; }
+      .contact-page main > .container { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+      .contact-page .contact-channels { margin-bottom: 40px; }
+    }
+  </style>
 </head>
 
 <body class="contact-page">
@@ -487,11 +537,11 @@
         Respon dalam 1–2 hari kerja
       </div>
       <h1 id="contact-heading" class="reveal reveal-delay-1">
-        Mari Berkolaborasi<br>
-        bersama <span class="brand-name">Teng Gooo</span>
+        Mari Terhubung<br>
+        dengan <span class="brand-name">Tenggoo</span>
       </h1>
       <p class="reveal reveal-delay-2">
-        Punya ide project, butuh konsultasi teknis, atau ingin berkolaborasi?
+        Punya ide proyek, butuh konsultasi teknis, atau ingin berkolaborasi?
         Kami siap mendengar dan membantu Anda.
       </p>
     </div>
@@ -512,7 +562,7 @@
           </div>
           <div class="ch-label">Email</div>
           <div class="ch-value">selaicode101@gmail.com</div>
-          <div class="ch-desc">Untuk konsultasi &amp; request fitur</div>
+          <div class="ch-desc">Untuk pertanyaan dan masukan produk</div>
         </a>
 
         <!-- GitHub -->
@@ -524,7 +574,7 @@
           </div>
           <div class="ch-label">GitHub</div>
           <div class="ch-value">@alafgani1000</div>
-          <div class="ch-desc">Lihat repository &amp; open issues</div>
+          <div class="ch-desc">Lihat repositori dan diskusi terbuka</div>
         </a>
 
         <!-- Response Time -->
@@ -572,13 +622,13 @@
             <div class="form-group">
               <label>Topik Pesan</label>
               <div class="topic-chips" role="group" aria-label="Pilih topik">
-                <button type="button" class="topic-chip active" data-topic="Konsultasi Project" aria-pressed="true">💬 Konsultasi Project</button>
-                <button type="button" class="topic-chip" data-topic="Request Fitur" aria-pressed="false">✨ Request Fitur</button>
-                <button type="button" class="topic-chip" data-topic="Kolaborasi" aria-pressed="false">🤝 Kolaborasi</button>
-                <button type="button" class="topic-chip" data-topic="Bug Report" aria-pressed="false">🐛 Bug Report</button>
-                <button type="button" class="topic-chip" data-topic="Lainnya" aria-pressed="false">📌 Lainnya</button>
+                <button type="button" class="topic-chip active" data-topic="Konsultasi Proyek" aria-pressed="true">Konsultasi Proyek</button>
+                <button type="button" class="topic-chip" data-topic="Masukan Fitur" aria-pressed="false">Masukan Fitur</button>
+                <button type="button" class="topic-chip" data-topic="Kolaborasi" aria-pressed="false">Kolaborasi</button>
+                <button type="button" class="topic-chip" data-topic="Laporan Masalah" aria-pressed="false">Laporan Masalah</button>
+                <button type="button" class="topic-chip" data-topic="Lainnya" aria-pressed="false">Lainnya</button>
               </div>
-              <input type="hidden" id="selected-topic" name="Topik" value="Konsultasi Project" />
+              <input type="hidden" id="selected-topic" name="Topik" value="Konsultasi Proyek" />
             </div>
 
             <!-- Nama & Email -->
@@ -599,7 +649,7 @@
             <div class="form-group">
               <label for="contact-subject">Judul / Subjek <span class="required" aria-label="wajib diisi">*</span></label>
               <input type="text" id="contact-subject" name="Judul" class="form-control-custom"
-                placeholder="Misal: Request Fitur Tambahan pada Quiz App" required />
+                placeholder="Misal: Masukan fitur tambahan pada Quiz App" required />
             </div>
 
             <!-- Pesan -->
@@ -638,11 +688,11 @@
             </h3>
             <div class="info-item">
               <span class="info-dot" aria-hidden="true"></span>
-              <p>Kami adalah developer independen yang fokus pada pengembangan aplikasi web berbasis <strong>Laravel</strong> dan ekosistemnya.</p>
+              <p>Kami adalah pengembang independen yang fokus pada aplikasi web berbasis <strong>Laravel</strong> dan ekosistemnya.</p>
             </div>
             <div class="info-item">
               <span class="info-dot" aria-hidden="true"></span>
-              <p>Semua source code yang tersedia di situs ini bersifat <strong>open source</strong> dan dapat digunakan secara gratis.</p>
+              <p>Semua kode sumber di situs ini bersifat <strong>terbuka</strong> dan dapat digunakan secara gratis.</p>
             </div>
             <div class="info-item">
               <span class="info-dot" aria-hidden="true"></span>
@@ -662,21 +712,21 @@
 
               <div class="faq-item" style="border-bottom:1px solid var(--color-border);">
                 <button class="faq-toggle" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;padding:0.85rem 0;cursor:pointer;font-family:var(--font-body);font-size:0.875rem;font-weight:600;color:var(--color-text);text-align:left;gap:0.5rem;" type="button">
-                  Apakah source code benar-benar gratis?
+                  Apakah kode sumber benar-benar gratis?
                   <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;transition:transform 0.2s ease;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
                 </button>
                 <div class="faq-body" style="display:none;padding-bottom:0.85rem;">
-                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Ya, semua source code yang tersedia di situs ini bersifat open source dan dapat digunakan, dimodifikasi, serta didistribusikan secara gratis.</p>
+                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Ya, semua kode sumber di situs ini bersifat terbuka dan dapat digunakan, dimodifikasi, serta didistribusikan secara gratis.</p>
                 </div>
               </div>
 
               <div class="faq-item" style="border-bottom:1px solid var(--color-border);">
                 <button class="faq-toggle" aria-expanded="false" style="width:100%;display:flex;justify-content:space-between;align-items:center;background:none;border:none;padding:0.85rem 0;cursor:pointer;font-family:var(--font-body);font-size:0.875rem;font-weight:600;color:var(--color-text);text-align:left;gap:0.5rem;" type="button">
-                  Apakah bisa request fitur baru?
+                  Apakah bisa mengusulkan fitur baru?
                   <svg class="faq-chevron" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0;transition:transform 0.2s ease;" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
                 </button>
                 <div class="faq-body" style="display:none;padding-bottom:0.85rem;">
-                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Tentu! Anda bisa request fitur melalui form kontak di sini, atau langsung buka issue di GitHub repository yang bersangkutan.</p>
+                  <p style="font-size:0.84rem;color:var(--color-text-muted);margin:0;line-height:1.6;">Tentu! Anda dapat mengusulkan fitur melalui formulir ini, atau membuka issue pada repositori GitHub terkait.</p>
                 </div>
               </div>
 
@@ -698,10 +748,10 @@
 
       <!-- ════ BOTTOM CTA ════ -->
       <div class="contact-cta-bottom reveal">
-        <h2>Jelajahi Koleksi Source Code</h2>
-        <p>Download, pelajari, dan kembangkan bersama komunitas open source kami.</p>
+        <h2>Jelajahi Koleksi Kode Sumber</h2>
+        <p>Unduh, pelajari, dan kembangkan bersama komunitas terbuka kami.</p>
         <a href="project.html" class="btn-cta-white">
-          Lihat Source Code
+          Lihat Kode Sumber
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
         </a>
       </div>

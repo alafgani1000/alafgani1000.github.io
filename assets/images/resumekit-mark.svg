@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">ResumeKit</title>
+  <desc id="desc">A document icon for ResumeKit.</desc>
+  <rect width="64" height="64" rx="16" fill="#081120"/>
+  <path d="M20 14h17l7 7v29H20z" fill="#fff"/>
+  <path d="M37 14v8h7" fill="none" stroke="#14B8A6" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M26 31h12M26 38h12M26 45h8" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+</svg>
