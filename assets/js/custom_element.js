@@ -45,7 +45,7 @@ class NavComponent extends HTMLElement {
             <li><a href="${home}"     class="${isHome     ? 'active' : ''}" ${isHome     ? 'aria-current="page"' : ''}>Beranda</a></li>
             <li><a href="${aplikasi}" class="${isAplikasi ? 'active' : ''}" ${isAplikasi ? 'aria-current="page"' : ''}>Alat</a></li>
             <li><a href="${blog}"     class="${isBlog     ? 'active' : ''}" ${isBlog     ? 'aria-current="page"' : ''}>Panduan</a></li>
-            <li><a href="${project}"  class="${isProject  ? 'active' : ''}" ${isProject  ? 'aria-current="page"' : ''}>Aplikasi</a></li>
+            <li><a href="${project}"  class="${isProject  ? 'active' : ''}" ${isProject  ? 'aria-current="page"' : ''}>Source Code</a></li>
             <li><a href="${theme}"    class="${isTheme    ? 'active' : ''}" ${isTheme    ? 'aria-current="page"' : ''}>Template</a></li>
             <li><a href="${contact}"  class="${isContact  ? 'active' : ''}" ${isContact  ? 'aria-current="page"' : ''}>Kontak</a></li>
           </ul>
@@ -155,7 +155,7 @@ class FooterComponent extends HTMLElement {
               <ul role="list">
                 <li><a href="${prefix}index.html">Beranda</a></li>
                 <li><a href="${prefix}blog.html">Panduan &amp; blog</a></li>
-                <li><a href="${prefix}project.html">Aplikasi</a></li>
+                <li><a href="${prefix}project.html">Source Code</a></li>
                 <li><a href="${prefix}theme.html">Template</a></li>
               </ul>
             </div>
@@ -175,6 +175,20 @@ class FooterComponent extends HTMLElement {
                 <div>
                   <span class="app-name">Tenggoo PDF</span>
                   <span class="app-desc">Alat PDF sehari-hari</span>
+                </div>
+              </a>
+              <a href="https://scan.tenggoo.my.id/" target="_blank" rel="noopener noreferrer" class="footer-app-item">
+                <span class="app-icon" aria-hidden="true">SCAN</span>
+                <div>
+                  <span class="app-name">Tenggoo Scan</span>
+                  <span class="app-desc">Pemindai dokumen ke PDF</span>
+                </div>
+              </a>
+              <a href="https://bengkelpro.tenggoo.my.id/" target="_blank" rel="noopener noreferrer" class="footer-app-item">
+                <span class="app-icon" aria-hidden="true">POS</span>
+                <div>
+                  <span class="app-name">Bengkel Pro</span>
+                  <span class="app-desc">Kasir &amp; manajemen bengkel</span>
                 </div>
               </a>
             </div>

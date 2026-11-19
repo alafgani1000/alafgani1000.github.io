@@ -2059,7 +2059,8 @@ body { background: #f7f8fc; }
 .home-preview__products { display: grid; gap: 12px; }
 .home-preview-product { display: grid; grid-template-columns: 42px 1fr auto; align-items: center; gap: 12px; padding: 14px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; }
 .home-preview-product__icon { display: grid; place-items: center; width: 42px; height: 42px; color: #fff; background: var(--home-navy); border-radius: 9px; font-size: .64rem; font-weight: 800; letter-spacing: .03em; }
-.home-preview-product--pdf .home-preview-product__icon { background: var(--home-teal); }
+.home-preview-product--pdf .home-preview-product__icon,
+.home-preview-product--scan .home-preview-product__icon { background: var(--home-teal); }
 .home-preview-product strong { display: block; color: var(--home-slate); font-size: .82rem; }
 .home-preview-product small { display: block; margin-top: 2px; color: #64748b; font-size: .67rem; line-height: 1.4; }
 .home-preview-product__tag { padding: .26rem .42rem; color: #475569; background: #eef2f7; border-radius: 6px; font-size: .6rem; font-weight: 700; }
