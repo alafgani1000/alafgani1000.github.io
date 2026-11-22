@@ -2,315 +2,240 @@
 <html lang="id">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Project App: Manajemen Proyek Laravel &amp; React | Tenggoo</title>
-    <meta name="description"
-        content="Aplikasi manajemen proyek modern berbasis web yang dibangun dengan Laravel dan React. Sistem ini menyediakan fitur lengkap untuk mengelola proyek tim, task management, roadmap planning, sprint management, dan monitoring kesehatan proyek secara real-time." />
-    <meta name="keywords"
-        content="project applikasi management, task management, roadmap planning, sprint management, monitoring kesehatan proyek, laravel, react, inertia.js, laravel inertia, react inertia, laravel inertia.js, laravel inertia.js project, laravel inertia.js task management, laravel inertia.js roadmap planning, laravel inertia.js sprint management, laravel inertia.js monitoring kesehatan proyek" />
-    <meta name="author" content="Ghani" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#081120" />
-    <meta property="og:type" content="article" />
-    <meta property="og:site_name" content="Tenggoo" />
-    <meta property="og:locale" content="id_ID" />
-    <meta property="og:url" content="https://tenggoo.my.id/project/project_app.html" />
-    <meta property="og:title" content="Project App: Manajemen Proyek Laravel &amp; React | Tenggoo" />
-    <meta property="og:description" content="Aplikasi kolaborasi tim untuk task, roadmap, sprint, dan pemantauan kesehatan proyek." />
-    <meta property="og:image" content="https://tenggoo.my.id/assets/images/project_app/1_list_project.png" />
-    <meta property="og:image:alt" content="Tampilan Project Management App" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Project App Laravel &amp; React | Tenggoo" />
-    <meta name="twitter:description" content="Aplikasi manajemen proyek modern untuk kolaborasi dan pemantauan progres tim." />
-    <meta name="twitter:image" content="https://tenggoo.my.id/assets/images/project_app/1_list_project.png" />
-    <link rel="canonical" href="https://tenggoo.my.id/project/project_app.html" />
-    <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="../assets/css/style.css?v=20261109b" />
-    <script src="../assets/js/custom_element.js?v=2.2.6" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project App: Manajemen Proyek Laravel &amp; React | Tenggoo</title>
+  <meta name="description"
+    content="Aplikasi manajemen proyek modern berbasis web yang dibangun dengan Laravel dan React. Sistem ini menyediakan fitur lengkap untuk mengelola proyek tim, task management, roadmap planning, sprint management, dan monitoring kesehatan proyek secara real-time." />
+  <meta name="keywords"
+    content="project applikasi management, task management, roadmap planning, sprint management, monitoring kesehatan proyek, laravel, react, inertia.js, laravel inertia, react inertia" />
+  <meta name="author" content="Ghani" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#fbfbfd" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Tenggoo" />
+  <meta property="og:locale" content="id_ID" />
+  <meta property="og:url" content="https://tenggoo.my.id/project/project_app.html" />
+  <meta property="og:title" content="Project App: Manajemen Proyek Laravel &amp; React | Tenggoo" />
+  <meta property="og:description" content="Aplikasi kolaborasi tim untuk task, roadmap, sprint, dan pemantauan kesehatan proyek." />
+  <meta property="og:image" content="https://tenggoo.my.id/assets/images/project_app/1_list_project.png" />
+  <meta property="og:image:alt" content="Tampilan Project Management App" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Project App Laravel &amp; React | Tenggoo" />
+  <meta name="twitter:description" content="Aplikasi manajemen proyek modern untuk kolaborasi dan pemantauan progres tim." />
+  <meta name="twitter:image" content="https://tenggoo.my.id/assets/images/project_app/1_list_project.png" />
+  <link rel="canonical" href="https://tenggoo.my.id/project/project_app.html" />
+  <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20261125" />
+  <script src="../assets/js/custom_element.js?v=3.1.0" defer></script>
 </head>
 
-<body class="work-sans project-app-page">
-    <div class="container-fluid mx-0 px-0">
-        <!-- start header -->
-        <header-component></header-component>
-        <!-- end header -->
+<body class="project-app-page apple-page apple-page--muted">
+  <header-component></header-component>
+  <nav-component home="../index.html" aplikasi="../aplikasi.html" blog="../blog.html" project="../project.html" theme="../theme.html"
+    contact="../contact.html"></nav-component>
 
-        <!-- start nav -->
-        <nav-component home="../index.html" aplikasi="../aplikasi.html" project="../project.html" theme="../theme.html"
-            contact="../contact.html"></nav-component>
-        <!-- end nav -->
-        <main class="container">
-            <div class="row justify-content-center py-4">
-                <div class="col-lg-3 col-md-8 px-0 mx-3">
-                    <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
-                        <ul>
-                            <li><a href="#intro">Overview</a></li>
-                            <li><a href="#fitur">Fitur Utama</a></li>
-                            <li><a href="#galeri">Galeri</a></li>
-                            <li><a href="#instalasi">Instalasi</a></li>
-                            <li><a href="#panduan">Panduan Pengguna</a></li>
-                        </ul>
-                    </div>
+  <main>
+    <section class="apple-page-hero" aria-labelledby="project-app-heading">
+      <div class="apple-page-hero__inner">
+        <nav class="apple-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Beranda</a><span aria-hidden="true">/</span>
+          <a href="../project.html">Source Code</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Project Management App</span>
+        </nav>
+        <p class="apple-eyebrow">Laravel + React + Inertia.js</p>
+        <h1 id="project-app-heading">Project Management App</h1>
+        <p class="apple-page-hero__sub">
+          Aplikasi manajemen proyek modern berbasis Laravel dan React untuk kolaborasi tim, manajemen task, sprint monitoring, dan pemantauan progres secara real-time.
+        </p>
+        <div class="apple-chip-row">
+          <span class="apple-chip">Laravel</span>
+          <span class="apple-chip">React</span>
+          <span class="apple-chip">Inertia.js</span>
+          <span class="apple-chip">Task Management</span>
+          <span class="apple-chip">Sprint Monitoring</span>
+        </div>
+        <div class="apple-cta-row">
+          <a href="https://github.com/alafgani1000/project-app" target="_blank" rel="noopener noreferrer" class="apple-btn apple-btn--primary">Lihat Repository</a>
+          <a href="../project.html" class="apple-btn apple-btn--outline-light">Semua Source Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="apple-band--muted">
+      <div class="apple-shell">
+        <div class="apple-doc-layout">
+          <aside class="apple-doc-nav" aria-label="Navigasi halaman">
+            <p class="apple-doc-nav__title">Di halaman ini</p>
+            <ul>
+              <li><a href="#fitur">Fitur Utama</a></li>
+              <li><a href="#galeri">Galeri Tampilan</a></li>
+              <li><a href="#instalasi">Instalasi</a></li>
+              <li><a href="#panduan">Panduan Pengguna</a></li>
+            </ul>
+          </aside>
+
+          <div class="apple-doc-main">
+            <section class="apple-doc-card" id="fitur">
+              <h2>Fitur Utama</h2>
+              <div class="apple-feature-2col">
+                <div class="apple-feature-mini">
+                  <h3>Dashboard &amp; Monitoring</h3>
+                  <ul>
+                    <li>Project health dashboard dengan indikator risiko.</li>
+                    <li>Metric sprint: burndown chart dan velocity.</li>
+                    <li>Roadmap vs execution untuk pantau target tim.</li>
+                  </ul>
                 </div>
-                <div class="col-lg-7 col-md-8 mx-3">
-                    <section class="justify row" id="intro">
-                        <div class="mx-auto rounded me-bg-primary p-4 p-md-5 project-hero">
-                            <div class="title-description">
-                                <h1 class="h2 fw-bold me-text-primary mb-3">Project Management App</h1>
-                                <p class="mb-3">
-                                    Aplikasi manajemen proyek modern berbasis Laravel + React untuk kolaborasi tim,
-                                    manajemen task, dan pemantauan progres secara real-time.
-                                </p>
-                                <div class="d-flex flex-wrap gap-2 mb-4">
-                                    <span class="badge text-bg-light project-badge">Laravel</span>
-                                    <span class="badge text-bg-light project-badge">React</span>
-                                    <span class="badge text-bg-light project-badge">Inertia.js</span>
-                                    <span class="badge text-bg-light project-badge">Task Management</span>
-                                    <span class="badge text-bg-light project-badge">Sprint Monitoring</span>
-                                </div>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <a href="https://github.com/alafgani1000/project-app" target="_blank"
-                                        rel="noopener noreferrer" class="btn btn-success">Lihat Repository</a>
-                                    <a href="../project.html" class="btn me-btn-gold">Lihat Project Lainnya</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+                <div class="apple-feature-mini">
+                  <h3>Task Management</h3>
+                  <ul>
+                    <li>Multiple assignees dan dependency antar task.</li>
+                    <li>Checklist, custom fields, dan time tracking.</li>
+                    <li>File attachment untuk kolaborasi tim.</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
 
-                    <section class="justify row mt-4" id="fitur">
-                        <div class="mx-auto p-4 rounded me-bg-primary">
-                            <h2 class="h4 fw-bold mb-3">Fitur Utama</h2>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="project-feature-card h-100">
-                                        <h3 class="h6 fw-bold mb-2">Dashboard & Monitoring</h3>
-                                        <ul class="mb-0">
-                                            <li>Project health dashboard dengan indikator risiko.</li>
-                                            <li>Metric sprint: burndown chart dan velocity.</li>
-                                            <li>Roadmap vs execution untuk pantau target tim.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="project-feature-card h-100">
-                                        <h3 class="h6 fw-bold mb-2">Task Management</h3>
-                                        <ul class="mb-0">
-                                            <li>Multiple assignees dan dependency antar task.</li>
-                                            <li>Checklist, custom fields, dan time tracking.</li>
-                                            <li>File attachment untuk kolaborasi tim.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+            <section class="apple-doc-card" id="galeri" aria-labelledby="proj-galeri-heading">
+              <h2 id="proj-galeri-heading">Galeri Tampilan</h2>
+              <div class="apple-gallery" data-apple-gallery tabindex="0" aria-label="Galeri tangkapan layar Project Management App">
+                <div class="apple-gallery__stage">
+                  <figure class="apple-gallery-slide active">
+                    <img src="../assets/images/project_app/1_list_project.png" alt="Halaman daftar project" />
+                    <figcaption>Daftar proyek aktif tim</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/project_app/2_create_project.png" alt="Halaman membuat project baru" loading="lazy" />
+                    <figcaption>Formulir pembuatan proyek dan anggota tim</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/project_app/3_detail_project_board.png" alt="Detail project dengan board task" loading="lazy" />
+                    <figcaption>Papan task board proyek</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/project_app/4_list_task.png" alt="Daftar task project" loading="lazy" />
+                    <figcaption>Daftar lengkap task dan status pengerjaan</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/project_app/5_calender_view_task.png" alt="Tampilan kalender task" loading="lazy" />
+                    <figcaption>Tampilan kalender jadwal task</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/project_app/6_work_load_personel.png" alt="Tampilan beban kerja personel" loading="lazy" />
+                    <figcaption>Pemantauan beban kerja personel</figcaption>
+                  </figure>
+                </div>
+                <div class="apple-gallery__controls">
+                  <div class="apple-gallery__arrows">
+                    <button type="button" class="apple-gallery__arrow" data-gallery-prev aria-label="Slide sebelumnya">&lsaquo;</button>
+                    <button type="button" class="apple-gallery__arrow" data-gallery-next aria-label="Slide berikutnya">&rsaquo;</button>
+                  </div>
+                  <div class="apple-gallery__dots" aria-label="Pilih slide">
+                    <button type="button" class="apple-gallery__dot active" data-gallery-dot aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 2" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 3" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 4" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 5" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 6" aria-current="false"></button>
+                  </div>
+                  <span class="apple-gallery__count" data-gallery-count>1 / 6</span>
+                </div>
+              </div>
+            </section>
 
-                    <section class="justify row mt-4" id="galeri">
-                        <div class="mx-auto p-4 rounded me-bg-primary">
-                            <h2 class="h4 fw-bold mb-3">Galeri Tampilan</h2>
-                            <div id="carouselProjectApp" class="carousel carousel-dark slide project-carousel">
-                                <div class="carousel-indicators">
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="0" class="active"
-                                        aria-current="true" aria-label="Slide Project Management App 1"></button>
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="1"
-                                        aria-label="Slide Project Management App 2"></button>
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="2"
-                                        aria-label="Slide Project Management App 3"></button>
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="3"
-                                        aria-label="Slide Project Management App 4"></button>
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="4"
-                                        aria-label="Slide Project Management App 5"></button>
-                                    <button type="button" data-bs-target="#carouselProjectApp" data-bs-slide-to="5"
-                                        aria-label="Slide Project Management App 6"></button>
-                                </div>
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="../assets/images/project_app/1_list_project.png" class="d-block w-100"
-                                            alt="Halaman daftar project" loading="lazy" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/project_app/2_create_project.png" class="d-block w-100"
-                                            alt="Halaman membuat project baru" loading="lazy" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/project_app/3_detail_project_board.png" class="d-block w-100"
-                                            alt="Detail project dengan board task" loading="lazy" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/project_app/4_list_task.png" class="d-block w-100"
-                                            alt="Daftar task project" loading="lazy" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/project_app/5_calender_view_task.png" class="d-block w-100"
-                                            alt="Tampilan kalender task" loading="lazy" />
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="../assets/images/project_app/6_work_load_personel.png" class="d-block w-100"
-                                            alt="Tampilan beban kerja personel" loading="lazy" />
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectApp"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectApp"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="justify row mt-4" id="instalasi">
-                        <div class="mx-auto p-4 rounded me-bg-primary">
-                            <div class="title-description mb-3">
-                                <h2 class="h4 fw-bold">Instalasi App</h2>
-                            </div>
-                            <div class="text-description">
-                                Berikut langkah-langkah untuk menginstal aplikasi ini dari GitHub:
-                                <ol>
-                                    <li>
-                                        <strong>Klon <a class="content-link"
-                                                href="https://github.com/alafgani1000/project-app" target="_blank"
-                                                rel="noopener noreferrer">repositori</a></strong>
-                                        <pre class="project-code"><code>git clone https://github.com/alafgani1000/project-app.git
+            <section class="apple-doc-card" id="instalasi">
+              <h2>Instalasi Aplikasi</h2>
+              <p>Berikut langkah-langkah untuk menginstal aplikasi ini dari GitHub:</p>
+              <ol>
+                <li>
+                  <strong>Klon <a href="https://github.com/alafgani1000/project-app" target="_blank" rel="noopener noreferrer">repositori</a></strong>
+                  <pre class="apple-code"><code>git clone https://github.com/alafgani1000/project-app.git
 cd project-app</code></pre>
-                                    </li>
-                                    <li>
-                                        <strong>Instal Dependensi PHP</strong>
-                                        <pre class="project-code"><code>composer install</code></pre>
-                                    </li>
-                                    <li>
-                                        <strong>Instal Dependensi JavaScript</strong>
-                                        <pre class="project-code"><code>npm install
+                </li>
+                <li>
+                  <strong>Instal Dependensi PHP</strong>
+                  <pre class="apple-code"><code>composer install</code></pre>
+                </li>
+                <li>
+                  <strong>Instal Dependensi JavaScript</strong>
+                  <pre class="apple-code"><code>npm install
 # atau
 yarn install</code></pre>
-                                    </li>
-                                    <li>
-                                        <strong>Konfigurasi Aplikasi</strong>
-                                        <ul>
-                                            <li>
-                                                <strong>File Environment:</strong> Salin file konfigurasi:
-                                                <pre class="project-code"><code>cp .env.example .env</code></pre>
-                                            </li>
-                                            <li>
-                                                <strong>Generate App Key:</strong>
-                                                <pre class="project-code"><code>php artisan key:generate</code></pre>
-                                            </li>
-                                            <li>
-                                                <strong>Konfigurasi Database:</strong> Buka file <code>.env</code> dan
-                                                perbarui pengaturan database sesuai pengaturan lokal Anda:
-                                                <pre class="project-code"><code>DB_CONNECTION=mysql
+                </li>
+                <li>
+                  <strong>Konfigurasi Aplikasi</strong>
+                  <ul>
+                    <li>
+                      Salin file konfigurasi:
+                      <pre class="apple-code"><code>cp .env.example .env</code></pre>
+                    </li>
+                    <li>
+                      Generate App Key:
+                      <pre class="apple-code"><code>php artisan key:generate</code></pre>
+                    </li>
+                    <li>
+                      Konfigurasi database di <code>.env</code>:
+                      <pre class="apple-code"><code>DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=project_app
 DB_USERNAME=root
 DB_PASSWORD=</code></pre>
-                                                <em>Catatan: Pastikan Anda telah membuat database (contoh:
-                                                    project_app) di server MySQL sebelum melanjutkan.</em>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Pengaturan Database</strong>
-                                        <pre class="project-code"><code>php artisan migrate --seed</code></pre>
-                                    </li>
-                                    <li>
-                                        <strong>Konfigurasi Email &amp; Antrean (Queue)</strong>
-                                        <ul>
-                                            <li>
-                                                <strong>Mail Driver:</strong>
-                                                <pre class="project-code"><code>MAIL_MAILER=smtp
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Pengaturan Database &amp; Penyimpanan</strong>
+                  <pre class="apple-code"><code>php artisan migrate --seed
+php artisan storage:link</code></pre>
+                </li>
+                <li>
+                  <strong>Konfigurasi Email &amp; Antrean (Queue)</strong>
+                  <pre class="apple-code"><code>MAIL_MAILER=smtp
 MAIL_HOST=sandbox.smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_USERNAME=username_anda
 MAIL_PASSWORD=password_anda
-MAIL_ENCRYPTION=tls</code></pre>
-                                            </li>
-                                            <li>
-                                                <strong>Queue Driver:</strong>
-                                                <pre class="project-code"><code>QUEUE_CONNECTION=database</code></pre>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Pengaturan Penyimpanan File</strong>
-                                        <pre class="project-code"><code>php artisan storage:link</code></pre>
-                                    </li>
-                                    <li>
-                                        <strong>Menjalankan Aplikasi</strong>
-                                        <p class="my-2">Buka dua terminal terpisah:</p>
-                                        <ul>
-                                            <li>
-                                                <strong>Terminal 1 (Backend)</strong>
-                                                <pre class="project-code"><code>php artisan serve</code></pre>
-                                            </li>
-                                            <li>
-                                                <strong>Terminal 2 (Frontend)</strong>
-                                                <pre class="project-code"><code>npm run dev
-# atau
-yarn dev</code></pre>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Kredensial Default (Seeder)</strong> tersedia setelah proses seeding.
-                                        Anda dapat mengubah atau menambah pengguna melalui fitur manajemen user di
-                                        aplikasi.
-                                    </li>
-                                    <li>
-                                        <strong>Informasi Tambahan</strong>
-                                        <ul>
-                                            <li>
-                                                <strong>Queue Worker:</strong>
-                                                <pre class="project-code"><code>php artisan queue:work</code></pre>
-                                            </li>
-                                            <li>
-                                                <strong>Production Build:</strong>
-                                                <pre class="project-code"><code>npm run build
-# atau
-yarn build</code></pre>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </section>
+MAIL_ENCRYPTION=tls
+QUEUE_CONNECTION=database</code></pre>
+                </li>
+                <li>
+                  <strong>Menjalankan Aplikasi</strong>
+                  <pre class="apple-code"><code># Terminal 1 (Backend)
+php artisan serve
 
-                    <section class="justify row mt-4" id="panduan">
-                        <div class="mx-auto p-4 rounded me-bg-primary">
-                            <h2 class="h4 fw-bold mb-3">Panduan Pengguna</h2>
-                            <div class="text-description">
-                                <ol>
-                                    <li>Buat project baru lalu tentukan timeline dan anggota tim.</li>
-                                    <li>Tambahkan task, assignee, prioritas, dan dependency.</li>
-                                    <li>Gunakan board serta kalender untuk memantau progres harian.</li>
-                                    <li>Cek dashboard health untuk melihat risiko dan beban kerja tim.</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </main>
-        <footer-component></footer-component>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+# Terminal 2 (Frontend)
+npm run dev
+
+# Opsional: Queue Worker / Production Build
+php artisan queue:work
+npm run build</code></pre>
+                </li>
+              </ol>
+            </section>
+
+            <section class="apple-doc-card" id="panduan">
+              <h2>Panduan Pengguna</h2>
+              <ol>
+                <li>Buat project baru lalu tentukan timeline dan anggota tim.</li>
+                <li>Tambahkan task, assignee, prioritas, dan dependency.</li>
+                <li>Gunakan board serta kalender untuk memantau progres harian.</li>
+                <li>Cek dashboard health untuk melihat risiko dan beban kerja tim.</li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer-component></footer-component>
 </body>
 
 </html>
-

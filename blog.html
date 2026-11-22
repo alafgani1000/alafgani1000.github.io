@@ -8,10 +8,10 @@
   <meta name="description"
     content="Baca panduan praktis seputar PDF, CV, keuangan UMKM, produktivitas, dan pengembangan web dari Tenggoo." />
   <meta name="keywords"
-    content="Tutorial Laravel, Blog Programming, Belajar PHP, Tips Coding, Web Development, Teng Gooo Blog" />
+    content="Tutorial Laravel, Blog Programming, Belajar PHP, Tips Coding, Web Development, Tenggoo Blog" />
   <meta name="author" content="Ghani" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#081120" />
+  <meta name="theme-color" content="#fbfbfd" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -31,74 +31,156 @@
   <meta property="twitter:description"
     content="Baca panduan praktis seputar PDF, CV, keuangan UMKM, produktivitas, dan pengembangan web." />
   <meta property="twitter:image" content="https://tenggoo.my.id/assets/images/og-tenggoo-v3.png" />
+
   <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261109b" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261126" />
   <link rel="canonical" href="https://tenggoo.my.id/blog.html" />
-  <script src="assets/js/custom_element.js?v=2.2.6" defer></script>
+  <script src="assets/js/custom_element.js?v=3.1.0" defer></script>
 </head>
 
-<body class="work-sans">
-  <!-- start header -->
+<body class="blog-index-page apple-page apple-page--muted">
   <header-component></header-component>
-  <!-- end header -->
-
-  <!-- start nav -->
   <nav-component></nav-component>
-  <!-- end nav -->
 
-  <main class="tg-blog-index">
-    <section class="tg-blog-index-hero">
-      <div class="container">
-        <span class="tg-article-eyebrow">Tenggoo Insight</span>
-        <h1>Panduan praktis untuk pekerjaan digital dan usaha.</h1>
-        <p>Temukan cara yang lebih mudah untuk mengelola PDF, membuat CV, mencatat keuangan UMKM, dan bekerja lebih rapi.</p>
+  <main>
+    <section class="apple-page-hero" aria-labelledby="blog-heading">
+      <div class="apple-page-hero__inner">
+        <p class="apple-eyebrow">Tenggoo Insight</p>
+        <h1 id="blog-heading">Panduan praktis untuk pekerjaan digital dan usaha.</h1>
+        <p class="apple-page-hero__sub">
+          Temukan cara yang lebih mudah untuk mengelola PDF, membuat CV, mencatat keuangan UMKM, dan bekerja lebih rapi.
+        </p>
       </div>
     </section>
-    <section class="container tg-blog-grid-wrap" aria-label="Daftar artikel">
-      <article class="tg-blog-card">
-        <div class="tg-blog-card-icon" aria-hidden="true">XLS</div>
-        <div>
-          <span>Keuangan &amp; UMKM</span>
-          <h2><a href="blogs/template-keuangan-excel.html">Bingung Hitung Untung Rugi Usaha? Coba Template Keuangan UMKM Ini</a></h2>
-          <p>Kenali template Excel siap pakai untuk mencatat penjualan, biaya, stok, arus kas, serta menghitung untung rugi usaha.</p>
-          <div class="tg-blog-card-footer"><time datetime="2026-09-11">11 September 2026</time><a href="blogs/template-keuangan-excel.html">Baca artikel <span aria-hidden="true">→</span></a></div>
+
+    <section class="apple-band--muted" aria-label="Daftar artikel">
+      <div class="apple-shell">
+
+        <!-- Featured Lead Article -->
+        <article class="apple-news-featured reveal">
+          <a href="blogs/template-keuangan-excel.html" class="apple-news-cover apple-news-cover--xls" aria-label="Baca Template Keuangan UMKM Excel">
+            <div class="apple-news-cover__top" aria-hidden="true">
+              <span class="apple-news-cover__tag">Panduan Unggulan</span>
+              <span class="apple-news-cover__pill">.XLSX</span>
+            </div>
+            <div class="apple-cover-sheet" aria-hidden="true">
+              <div class="apple-cover-sheet__head">
+                <strong>Dashboard UMKM</strong>
+                <span class="apple-cover-trend">+18,4%</span>
+              </div>
+              <div class="apple-cover-bars">
+                <span style="height:36%"></span>
+                <span style="height:54%"></span>
+                <span style="height:48%"></span>
+                <span style="height:76%"></span>
+                <span style="height:96%"></span>
+              </div>
+              <div class="apple-cover-kpis">
+                <div><small>Penjualan</small><strong>Rp 24,5 jt</strong></div>
+                <div><small>Biaya</small><strong>Rp 11,2 jt</strong></div>
+                <div><small>Laba Bersih</small><strong>Rp 13,3 jt</strong></div>
+              </div>
+            </div>
+            <div class="apple-news-cover__foot" aria-hidden="true">
+              <span>6 Sheet Otomatis · Gratis</span>
+            </div>
+          </a>
+          <div class="apple-news-featured__body">
+            <p class="apple-news-card__cat">Keuangan &amp; UMKM</p>
+            <h2><a href="blogs/template-keuangan-excel.html">Bingung Hitung Untung Rugi Usaha? Coba Template Keuangan UMKM Ini</a></h2>
+            <p>Kenali template Excel siap pakai untuk mencatat penjualan, biaya, stok, arus kas, serta menghitung untung rugi usaha secara rapi.</p>
+            <div class="apple-news-card__foot">
+              <time datetime="2026-09-11">11 September 2026</time>
+              <a href="blogs/template-keuangan-excel.html">Baca artikel &rsaquo;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Secondary Guides Grid -->
+        <div class="apple-news-grid-2">
+          <article class="apple-news-article-card reveal">
+            <a href="blogs/aplikasi-pdf-online.html" class="apple-news-cover apple-news-cover--sm apple-news-cover--blue" aria-label="Baca 7 Aplikasi PDF Online">
+              <div class="apple-news-cover__top" aria-hidden="true">
+                <span class="apple-news-cover__tag">Alat Dokumen</span>
+                <span class="apple-news-cover__pill">7 Pilihan</span>
+              </div>
+              <div class="apple-cover-pdfgrid" aria-hidden="true">
+                <div class="apple-cover-pdfdoc">
+                  <span>PDF</span>
+                  <small>Siap Pakai</small>
+                </div>
+                <div class="apple-cover-pdfchips">
+                  <span>Edit</span>
+                  <span>Kompres</span>
+                  <span>Gabung</span>
+                  <span>Konversi</span>
+                </div>
+              </div>
+            </a>
+            <div class="apple-news-article-card__body">
+              <p class="apple-news-card__cat">PDF &amp; Produktivitas</p>
+              <h2><a href="blogs/aplikasi-pdf-online.html">7 Aplikasi PDF Online untuk Edit, Kompres, dan Mengelola File</a></h2>
+              <p>Kenali pilihan aplikasi PDF online untuk mengedit, mengompres, menggabungkan, mengonversi, dan mengatur dokumen sesuai kebutuhan Anda.</p>
+              <div class="apple-news-card__foot">
+                <time datetime="2026-09-02">2 September 2026</time>
+                <a href="blogs/aplikasi-pdf-online.html">Baca artikel &rsaquo;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="apple-news-article-card reveal">
+            <a href="blogs/cara-mengecilkan-ukuran-pdf.html" class="apple-news-cover apple-news-cover--sm apple-news-cover--slate" aria-label="Baca Cara Mengecilkan Ukuran PDF">
+              <div class="apple-news-cover__top" aria-hidden="true">
+                <span class="apple-news-cover__tag">Optimasi File</span>
+                <span class="apple-news-cover__pill">Panduan PDF</span>
+              </div>
+              <div class="apple-cover-compress" aria-hidden="true">
+                <div class="apple-cover-compress__row">
+                  <div class="apple-cover-size">
+                    <small>Asli</small>
+                    <strong>8.4 MB</strong>
+                  </div>
+                  <span class="apple-cover-arrow">&rarr;</span>
+                  <div class="apple-cover-size apple-cover-size--out">
+                    <small>Kompres</small>
+                    <strong>1.1 MB</strong>
+                  </div>
+                </div>
+                <span class="apple-cover-saving">-86% · Tetap Jelas</span>
+              </div>
+            </a>
+            <div class="apple-news-article-card__body">
+              <p class="apple-news-card__cat">PDF &amp; Produktivitas</p>
+              <h2><a href="blogs/cara-mengecilkan-ukuran-pdf.html">Cara Mengecilkan Ukuran PDF agar Tetap Jelas</a></h2>
+              <p>Panduan mengompres PDF untuk CV, dokumen scan, laporan, dan formulir online tanpa mengorbankan keterbacaan teks maupun gambar.</p>
+              <div class="apple-news-card__foot">
+                <time datetime="2026-09-02">2 September 2026</time>
+                <a href="blogs/cara-mengecilkan-ukuran-pdf.html">Baca artikel &rsaquo;</a>
+              </div>
+            </div>
+          </article>
         </div>
-      </article>
-      <article class="tg-blog-card">
-        <div class="tg-blog-card-icon tg-blog-card-icon--violet" aria-hidden="true">PDF</div>
-        <div>
-          <span>PDF &amp; Produktivitas</span>
-          <h2><a href="blogs/aplikasi-pdf-online.html">7 Aplikasi PDF Online untuk Edit, Kompres, dan Mengelola File</a></h2>
-          <p>Kenali pilihan aplikasi PDF online untuk mengedit, kompres, gabung, konversi, dan mengatur dokumen sesuai kebutuhan Anda.</p>
-          <div class="tg-blog-card-footer"><time datetime="2026-09-02">2 September 2026</time><a href="blogs/aplikasi-pdf-online.html">Baca artikel <span aria-hidden="true">→</span></a></div>
-        </div>
-      </article>
-      <article class="tg-blog-card">
-        <div class="tg-blog-card-icon" aria-hidden="true">PDF</div>
-        <div>
-          <span>PDF &amp; Produktivitas</span>
-          <h2><a href="blogs/cara-mengecilkan-ukuran-pdf.html">Cara Mengecilkan Ukuran PDF agar Tetap Jelas</a></h2>
-          <p>Panduan mengompres PDF untuk CV, dokumen scan, laporan, dan formulir online tanpa mengorbankan keterbacaan.</p>
-          <div class="tg-blog-card-footer"><time datetime="2026-09-02">2 September 2026</time><a href="blogs/cara-mengecilkan-ukuran-pdf.html">Baca artikel <span aria-hidden="true">→</span></a></div>
-        </div>
-      </article>
+
+        <section class="apple-closing-wrap" style="padding-left:0;padding-right:0;padding-bottom:0;" aria-labelledby="blog-cta-heading">
+          <div class="apple-closing-banner">
+            <p class="apple-eyebrow">Coba Langsung</p>
+            <h2 id="blog-cta-heading">Selesaikan tugas dokumen Anda lebih cepat.</h2>
+            <p>Gunakan Tenggoo PDF, ResumeKit, Tenggoo Scan, atau Bengkel Pro langsung dari browser secara gratis.</p>
+            <div class="apple-cta-row">
+              <a href="aplikasi.html" class="apple-btn apple-btn--primary">Jelajahi Semua Alat</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
     </section>
   </main>
 
-  <!-- start footer -->
-  <footer-component> </footer-component>
-  <!-- end footer -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  <footer-component></footer-component>
 </body>
 
 </html>

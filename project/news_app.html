@@ -4,16 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>
-    News App Laravel Open Source untuk Portal Berita | Tenggoo
-  </title>
+  <title>News App Laravel Open Source untuk Portal Berita | Tenggoo</title>
   <meta name="description"
     content="Buat Portal Berita atau Blog dengan mudah! News App berbasis Laravel (PHP) Open Source untuk manajemen artikel, kategori, media, dan komentar. Gratis untuk dikembangkan." />
   <meta name="keywords"
     content="news app laravel, cms berita php, aplikasi blog open source, portal informasi, manajemen artikel laravel, proyek laravel gratis, web berita" />
   <meta name="author" content="Ghani" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#081120" />
+  <meta name="theme-color" content="#fbfbfd" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Tenggoo" />
   <meta property="og:locale" content="id_ID" />
@@ -29,192 +27,149 @@
   <link rel="canonical" href="https://tenggoo.my.id/project/news_app.html" />
   <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css?v=20261109b" />
-  <script src="../assets/js/custom_element.js?v=2.2.6" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20261125" />
+  <script src="../assets/js/custom_element.js?v=3.1.0" defer></script>
 </head>
 
-<body class="work-sans">
-  <div class="container-fluid mx-0 px-0">
-    <!-- start header -->
-    <header-component></header-component>
-    <!-- end header -->
+<body class="project-app-page apple-page apple-page--muted">
+  <header-component></header-component>
+  <nav-component home="../index.html" aplikasi="../aplikasi.html" blog="../blog.html" project="../project.html" theme="../theme.html"
+    contact="../contact.html"></nav-component>
 
-    <!-- start nav -->
-    <nav-component home="../index.html" aplikasi="../aplikasi.html" project="../project.html" theme="../theme.html"
-      contact="../contact.html"></nav-component>
-    <!-- end nav -->
-    <section class="container">
-      <div class="row justify-content-center py-4">
-        <div class="col-lg-3 col-md-8 px-0 mx-3">
-          <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
-            <ul>
-              <li><a href="#intro">Intro</a></li>
-              <li><a href="#instalasi">Instalasi</a></li>
-              <li><a href="#instalasi">Panduan Pengguna</a></li>
-              <!-- <li><a href="#credit">Credit</a></li> -->
-            </ul>
-          </div>
+  <main>
+    <section class="apple-page-hero" aria-labelledby="news-heading">
+      <div class="apple-page-hero__inner">
+        <nav class="apple-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Beranda</a><span aria-hidden="true">/</span>
+          <a href="../project.html">Source Code</a><span aria-hidden="true">/</span>
+          <span aria-current="page">News App</span>
+        </nav>
+        <p class="apple-eyebrow">CMS Berita &amp; Blog</p>
+        <h1 id="news-heading">News App Laravel Open Source</h1>
+        <p class="apple-page-hero__sub">
+          Portal berita dan CMS blog berbasis Laravel untuk mengelola artikel, kategori, media galeri, halaman statis, dan pengguna secara terstruktur.
+        </p>
+        <div class="apple-chip-row">
+          <span class="apple-chip">Laravel</span>
+          <span class="apple-chip">CMS</span>
+          <span class="apple-chip">Blog</span>
+          <span class="apple-chip">Open Source</span>
         </div>
-        <div class="col-lg-7 col-md-8 mx-3">
-          <div class="justify row" id="intro">
-            <div class="mx-auto rounded me-bg-primary">
-              <div class="title-description py-3">
-                <h1 class="h2 text-center">News App Laravel Open Source</h1>
-                <p>
-                  News App adalah sebuah aplikasi berbasis web yang dirancang
-                  untuk memudahkan pengguna dalam membuat dan mengelola situs
-                  berita, blog pribadi, maupun portal informasi. Aplikasi ini
-                  dikembangkan menggunakan bahasa pemrograman PHP, dengan
-                  framework Laravel sebagai fondasi utamanya.
-                </p>
-                <p>
-                  Melalui News App, pengguna dapat dengan mudah membuat
-                  artikel, mengatur kategori berita, menambahkan gambar atau
-                  media pendukung, serta mengelola komentar dari pembaca.
-                  Aplikasi ini juga dilengkapi dengan sistem autentikasi,
-                  sehingga hanya pengguna yang terdaftar atau admin yang
-                  memiliki hak untuk menulis dan mengedit konten.
-                </p>
-                <p>
-                  Aplikasi ini bersifat open source dan gratis, sehingga siapa
-                  pun dapat memodifikasi, mengembangkan, atau menambahkan
-                  fitur baru sesuai kebutuhan. Tujuannya adalah menciptakan
-                  ekosistem pengembangan yang kolaboratif dan mendorong
-                  pembelajaran di bidang pemrograman web.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="apple-cta-row">
+          <a href="https://github.com/alafgani1000/news_app" target="_blank" rel="noopener noreferrer" class="apple-btn apple-btn--primary">Lihat Repository</a>
+          <a href="../project.html" class="apple-btn apple-btn--outline-light">Semua Source Code</a>
+        </div>
+      </div>
+    </section>
 
-          <div class="justify row mt-4">
-            <div class="mx-auto p-4 rounded me-bg-primary">
-              <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+    <section class="apple-band--muted">
+      <div class="apple-shell">
+        <div class="apple-doc-layout">
+          <aside class="apple-doc-nav" aria-label="Navigasi halaman">
+            <p class="apple-doc-nav__title">Di halaman ini</p>
+            <ul>
+              <li><a href="#intro">Ringkasan</a></li>
+              <li><a href="#galeri">Galeri Tampilan</a></li>
+              <li><a href="#instalasi">Instalasi</a></li>
+            </ul>
+          </aside>
+
+          <div class="apple-doc-main">
+            <article class="apple-doc-card" id="intro">
+              <h2>Ringkasan Aplikasi</h2>
+              <p>
+                News App adalah aplikasi berbasis web yang dirancang untuk memudahkan pengguna dalam membuat dan mengelola situs berita, blog pribadi, maupun portal informasi menggunakan PHP dan framework Laravel.
+              </p>
+              <p>
+                Pengguna dapat menulis artikel, mengatur kategori berita, menambahkan gambar atau media pendukung, serta mengelola komentar pembaca dengan sistem autentikasi khusus untuk admin dan penulis.
+              </p>
+              <p>
+                Aplikasi ini bersifat open source dan gratis sehingga terbuka untuk dimodifikasi, dikembangkan, dan dijadikan media belajar pemrograman web.
+              </p>
+            </article>
+
+            <section class="apple-doc-card" id="galeri" aria-labelledby="news-galeri-heading">
+              <h2 id="news-galeri-heading">Galeri Tampilan</h2>
+              <div class="apple-gallery" data-apple-gallery tabindex="0" aria-label="Galeri tangkapan layar News App">
+                <div class="apple-gallery__stage">
+                  <figure class="apple-gallery-slide active">
+                    <img src="../assets/images/news_app/home.png" alt="Halaman utama News App" />
+                    <figcaption>Halaman utama portal berita</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/news_app/admin_news.png" alt="Manajemen artikel berita" loading="lazy" />
+                    <figcaption>Dashboard admin manajemen artikel berita</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/news_app/admin_pages.png" alt="Manajemen halaman statis" loading="lazy" />
+                    <figcaption>Pengelolaan halaman statis situs</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/news_app/admin_add_category.png" alt="Manajemen kategori berita" loading="lazy" />
+                    <figcaption>Penambahan dan pengaturan kategori berita</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/news_app/admin_galery.png" alt="Manajemen galeri media" loading="lazy" />
+                    <figcaption>Pengelolaan galeri media dan gambar</figcaption>
+                  </figure>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img
-                      src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/home.png"
-                      class="d-block w-100" alt="..." />
+                <div class="apple-gallery__controls">
+                  <div class="apple-gallery__arrows">
+                    <button type="button" class="apple-gallery__arrow" data-gallery-prev aria-label="Slide sebelumnya">&lsaquo;</button>
+                    <button type="button" class="apple-gallery__arrow" data-gallery-next aria-label="Slide berikutnya">&rsaquo;</button>
                   </div>
-                  <!-- slide 2 -->
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img
-                      src="https://raw.githubusercontent.com/alafgani1000/news_app/refs/heads/main/public/images/thumbnail/detail.png"
-                      class="d-block w-100" alt="..." />
+                  <div class="apple-gallery__dots" aria-label="Pilih slide">
+                    <button type="button" class="apple-gallery__dot active" data-gallery-dot aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 2" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 3" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 4" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 5" aria-current="false"></button>
                   </div>
+                  <span class="apple-gallery__count" data-gallery-count>1 / 5</span>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-            </div>
-          </div>
+            </section>
 
-          <div class="justify row mt-4" id="instalasi">
-            <div class="mx-auto p-4 rounded me-bg-primary">
-              <div class="title-description mx-4 mt-3">
-                <h3 class="">Instalasi App</h3>
-              </div>
-              <div class="text-description m-4">
-                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
-                GitHub:
-                <ol>
-                  <li>
-                    Buka command promp, atau yang lainnya. arahkan ke
-                    direktory aplikasi akan di simpan
-                  </li>
-                  <li>
-                    Kloning Repositori: Gunakan perintah git clone untuk
-                    mengunduh kode sumber dari GitHub.
-                    <a href="https://github.com/alafgani1000/news_app">Link repository</a>
-                  </li>
-
-                  <li>
-                    Arahkan ke Direktori Proyek: Masukkan folder proyek
-                    menggunakan cd nama-folder.
-                  </li>
-
-                  <li>
-                    Instal Dependensi: Jalankan <b>composer install</b> untuk
-                    menginstal semua dependensi yang diperlukan.
-                  </li>
-
-                  <li>copy .env.example ganti nama dengan .env</li>
-
-                  <li>
-                    Konfigurasi File .env: Perbarui pengaturan basis data,
-                    termasuk nama basis data, nama pengguna, dan kata sandi.
-                  </li>
-
-                  <li>
-                    Buat Kunci Aplikasi: Jalankan
-                    <b>php artisan key:generate</b>
-                    untuk membuat kunci aplikasi yang unik.
-                  </li>
-
-                  <li>
-                    Buat Basis Data: Siapkan basis data baru yang sesuai
-                    dengan nama yang ditentukan dalam file .env.
-                  </li>
-
-                  <li>
-                    Jalankan Migrasi Basis Data: Gunakan
-                    <b>php artisan migrate</b>
-                    untuk membuat tabel yang diperlukan dalam basis data.
-                  </li>
-
-                  <li>
-                    Jalankan perintah <b>php artisan db:seed</b> untuk input
-                    aturan awal.
-                  </li>
-
-                  <li>Jalankan perintah npm run dev atau yarn dev.</li>
-
-                  <li>
-                    Mulai Server Laravel: Luncurkan server dengan php artisan
-                    serve dan akses aplikasi di http://localhost:8000.
-                  </li>
-
-                  <li>
-                    Silakan masuk dengan nama pengguna dan kata sandi di
-                    UserSeeder.
-                  </li>
-                </ol>
-              </div>
-              <div class="text-description"></div>
-            </div>
+            <section class="apple-doc-card" id="instalasi">
+              <h2>Instalasi Aplikasi</h2>
+              <p>Berikut langkah-langkah untuk menginstal aplikasi Laravel dari GitHub:</p>
+              <ol>
+                <li>
+                  Kloning <a href="https://github.com/alafgani1000/news_app" target="_blank" rel="noopener noreferrer">repositori GitHub</a> ke direktori lokal:
+                  <pre class="apple-code"><code>git clone https://github.com/alafgani1000/news_app.git
+cd news_app</code></pre>
+                </li>
+                <li>
+                  Instal seluruh dependensi backend dengan Composer:
+                  <pre class="apple-code"><code>composer install</code></pre>
+                </li>
+                <li>
+                  Salin <code>.env.example</code> menjadi <code>.env</code>, lalu perbarui pengaturan basis data (nama database, pengguna, dan kata sandi).
+                </li>
+                <li>
+                  Buat kunci aplikasi, siapkan basis data baru, lalu jalankan migrasi dan seeder:
+                  <pre class="apple-code"><code>php artisan key:generate
+php artisan migrate
+php artisan db:seed</code></pre>
+                </li>
+                <li>
+                  Jalankan kompilasi aset frontend dan server Laravel:
+                  <pre class="apple-code"><code>npm run dev
+php artisan serve</code></pre>
+                  Akses aplikasi di <code>http://localhost:8000</code> dan masuk menggunakan akun awal dari <code>UserSeeder</code>.
+                </li>
+              </ol>
+            </section>
           </div>
         </div>
       </div>
     </section>
-    <footer-component></footer-component>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  </main>
+
+  <footer-component></footer-component>
 </body>
 
 </html>
-
-

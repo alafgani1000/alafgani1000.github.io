@@ -3,9 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>
-    Quiz App Laravel Open Source dan Gratis | Tenggoo
-  </title>
+  <title>Quiz App Laravel Open Source dan Gratis | Tenggoo</title>
   <meta name="description"
     content="Dapatkan Quiz App berbasis Laravel (PHP) yang Open Source! Kelola, buat, dan publikasikan kuis dengan mudah. Cocok untuk proyek pembelajaran dan pengembangan web." />
   <meta name="keywords"
@@ -13,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Ghani" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-  <meta name="theme-color" content="#081120" />
+  <meta name="theme-color" content="#fbfbfd" />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Tenggoo" />
   <meta property="og:locale" content="id_ID" />
@@ -29,212 +27,160 @@
   <link rel="canonical" href="https://tenggoo.my.id/project/quiz_app.html" />
   <link rel="icon" href="/assets/images/tenggoo-mark.svg" type="image/svg+xml" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/style.css?v=20261109b" />
-  <script src="../assets/js/custom_element.js?v=2.2.6" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css?v=20261125" />
+  <script src="../assets/js/custom_element.js?v=3.1.0" defer></script>
 </head>
 
-<body class="work-sans">
-  <div class="container-fluid mx-0 px-0">
-    <!-- start header -->
-    <header-component></header-component>
-    <!-- end header -->
+<body class="project-app-page apple-page apple-page--muted">
+  <header-component></header-component>
+  <nav-component home="../index.html" aplikasi="../aplikasi.html" blog="../blog.html" project="../project.html" theme="../theme.html"
+    contact="../contact.html"></nav-component>
 
-    <!-- start nav -->
-    <nav-component home="../index.html" aplikasi="../aplikasi.html" project="../project.html" theme="../theme.html"
-      contact="../contact.html"></nav-component>
-    <!-- end nav -->
-    <section class="container">
-      <div class="row justify-content-center py-4">
-        <div class="col-lg-3 col-md-8 px-0 mx-3">
-          <div class="side-bar-menu py-2 rounded sticky-lg-top mb-2">
-            <ul>
-              <li><a href="#intro">Intro</a></li>
-              <li><a href="#kebutuhan">Kebutuhan</a></li>
-              <li><a href="#instalasi">Instalasi</a></li>
-              <li><a href="#instalasi">Panduan Pengguna</a></li>
-              <!-- <li><a href="#credit">Credit</a></li> -->
-            </ul>
-          </div>
+  <main>
+    <section class="apple-page-hero" aria-labelledby="quiz-heading">
+      <div class="apple-page-hero__inner">
+        <nav class="apple-breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Beranda</a><span aria-hidden="true">/</span>
+          <a href="../project.html">Source Code</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Quiz App</span>
+        </nav>
+        <p class="apple-eyebrow">Laravel Open Source</p>
+        <h1 id="quiz-heading">Quiz App Laravel Open Source</h1>
+        <p class="apple-page-hero__sub">
+          Aplikasi manajemen kuis berbasis PHP dan Laravel untuk membuat sesi kuis, mengelola bank soal, serta mempublikasikan hasil secara terbuka.
+        </p>
+        <div class="apple-chip-row">
+          <span class="apple-chip">Laravel</span>
+          <span class="apple-chip">PHP ^8.1</span>
+          <span class="apple-chip">Quiz Engine</span>
+          <span class="apple-chip">Education</span>
         </div>
-        <div class="col-lg-7 col-md-8 mx-3">
-          <div class="justify row" id="intro">
-            <div class="mx-auto rounded me-bg-primary">
-              <div class="title-description py-3">
-                <h1 class="h2 text-center">Quiz App Laravel Open Source</h1>
-                <p>
-                  Quiz App adalah aplikasi untuk manajemen kuis yang dibuat
-                  menggunakan bahasa pemrograman PHP, lebih spesifik dengan
-                  framework Laravel. Aplikasi ini memiliki berbagai fitur
-                  seperti membuat kuis, menambahkan pertanyaan dan jawaban,
-                  serta mempublikasikannya ke halaman utama. Setiap orang
-                  dapat mengakses dan mengikuti kuis tersebut, dengan syarat
-                  mereka harus mendaftar terlebih dahulu.
-                </p>
-                <p>
-                  Aplikasi ini masih memiliki beberapa kekurangan, namun sudah
-                  cukup lengkap untuk fitur-fitur dasarnya. Selain itu,
-                  aplikasi ini bersifat open source atau gratis, sehingga
-                  siapa pun dapat mengubah dan mengembangkannya agar menjadi
-                  lebih baik serta memiliki lebih banyak fitur. Aplikasi ini
-                  juga dapat digunakan sebagai media pembelajaran bagi siapa
-                  pun yang sedang belajar coding, khususnya dalam pengembangan
-                  aplikasi berbasis web.
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="apple-cta-row">
+          <a href="https://github.com/alafgani1000/kuis" target="_blank" rel="noopener noreferrer" class="apple-btn apple-btn--primary">Lihat Repository</a>
+          <a href="../project.html" class="apple-btn apple-btn--outline-light">Semua Source Code</a>
+        </div>
+      </div>
+    </section>
 
-          <div class="justify row mt-4">
-            <div class="mx-auto p-4 rounded me-bg-primary">
-              <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
-                    aria-label="Slide 5"></button>
+    <section class="apple-band--muted">
+      <div class="apple-shell">
+        <div class="apple-doc-layout">
+          <aside class="apple-doc-nav" aria-label="Navigasi halaman">
+            <p class="apple-doc-nav__title">Di halaman ini</p>
+            <ul>
+              <li><a href="#intro">Ringkasan</a></li>
+              <li><a href="#galeri">Galeri Tampilan</a></li>
+              <li><a href="#kebutuhan">Kebutuhan Sistem</a></li>
+              <li><a href="#instalasi">Instalasi</a></li>
+            </ul>
+          </aside>
+
+          <div class="apple-doc-main">
+            <article class="apple-doc-card" id="intro">
+              <h2>Ringkasan Aplikasi</h2>
+              <p>
+                Quiz App adalah aplikasi untuk manajemen kuis yang dibuat menggunakan bahasa pemrograman PHP dengan framework Laravel. Aplikasi ini memiliki berbagai fitur seperti membuat kuis, menambahkan pertanyaan dan jawaban, serta mempublikasikannya ke halaman utama agar peserta dapat mengikuti sesi kuis setelah mendaftar.
+              </p>
+              <p>
+                Aplikasi ini bersifat open source dan gratis, sehingga siapa pun dapat memodifikasi dan mengembangkannya agar menjadi lebih baik serta menjadi media pembelajaran pengembangan aplikasi web modern.
+              </p>
+            </article>
+
+            <section class="apple-doc-card" id="galeri" aria-labelledby="galeri-heading">
+              <h2 id="galeri-heading">Galeri Tampilan</h2>
+              <div class="apple-gallery" data-apple-gallery tabindex="0" aria-label="Galeri tangkapan layar Quiz App">
+                <div class="apple-gallery__stage">
+                  <figure class="apple-gallery-slide active">
+                    <img src="../assets/images/quiz/home.png" alt="Halaman utama Quiz App" />
+                    <figcaption>Halaman utama daftar kuis yang dipublikasikan</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/quiz/quiz_session.png" alt="Halaman sesi kuis" loading="lazy" />
+                    <figcaption>Tampilan pengerjaan sesi kuis oleh peserta</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/quiz/result_quiz.png" alt="Halaman hasil kuis" loading="lazy" />
+                    <figcaption>Ringkasan hasil dan skor kuis peserta</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/quiz/quiz.png" alt="Admin mengelola kuis" loading="lazy" />
+                    <figcaption>Panel admin untuk manajemen daftar kuis</figcaption>
+                  </figure>
+                  <figure class="apple-gallery-slide" hidden>
+                    <img src="../assets/images/quiz/question.png" alt="Admin mengelola soal" loading="lazy" />
+                    <figcaption>Panel admin untuk manajemen soal dan jawaban</figcaption>
+                  </figure>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="../assets/images/quiz/home.png" class="d-block w-100" alt="halaman utama quiz" />
+                <div class="apple-gallery__controls">
+                  <div class="apple-gallery__arrows">
+                    <button type="button" class="apple-gallery__arrow" data-gallery-prev aria-label="Slide sebelumnya">&lsaquo;</button>
+                    <button type="button" class="apple-gallery__arrow" data-gallery-next aria-label="Slide berikutnya">&rsaquo;</button>
                   </div>
-                  <!-- slide 2 -->
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../assets/images/quiz/quiz_session.png" class="d-block w-100" alt="halaman quiz" />
+                  <div class="apple-gallery__dots" aria-label="Pilih slide">
+                    <button type="button" class="apple-gallery__dot active" data-gallery-dot aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 2" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 3" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 4" aria-current="false"></button>
+                    <button type="button" class="apple-gallery__dot" data-gallery-dot aria-label="Slide 5" aria-current="false"></button>
                   </div>
-                  <!-- slide 3 -->
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../assets/images/quiz/result_quiz.png" class="d-block w-100" alt="quiz result" />
-                  </div>
-                  <!-- slide 4 -->
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../assets/images/quiz/quiz.png" class="d-block w-100" alt="admin manage quiz" />
-                  </div>
-                  <!-- slide 4 -->
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="../assets/images/quiz/question.png" class="d-block w-100" alt="admin manage question" />
-                  </div>
+                  <span class="apple-gallery__count" data-gallery-count>1 / 5</span>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
-            </div>
-          </div>
+            </section>
 
-          <div class="justify row mt-4" id="kebutuhan">
-            <div class="mx-auto p-4 rounded me-bg-primary">
-              <div class="title-description mx-4 mt-3">
-                <h3 class="">Kebutuhan Aplikasi</h3>
-              </div>
-              <div class="text-description m-4">
-                <ul>
-                  <li>PHP ^8.1</li>
-                  <li>Composer 2</li>
-                  <li>Node.js 20+</li>
-                  <li>NPM 10+</li>
-                  <li>Mysql</li>
-                  <li>Redis Server</li>
-                  <li>Web Server (Apache, Nginx, etc.)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            <section class="apple-doc-card" id="kebutuhan">
+              <h2>Kebutuhan Sistem</h2>
+              <ul>
+                <li>PHP ^8.1</li>
+                <li>Composer 2</li>
+                <li>Node.js 20+ dan NPM 10+</li>
+                <li>MySQL</li>
+                <li>Redis Server</li>
+                <li>Web Server (Apache, Nginx, atau built-in Laravel)</li>
+              </ul>
+            </section>
 
-          <div class="justify row mt-4" id="instalasi">
-            <div class="mx-auto p-4 rounded me-bg-primary">
-              <div class="title-description mx-4 mt-3">
-                <h3 class="">Instalasi App</h3>
-              </div>
-              <div class="text-description m-4">
-                Berikut langkah-langkah untuk menginstal aplikasi Laravel dari
-                GitHub:
-                <ol>
-                  <li>
-                    Clone dari Repositori
-                    <br />
-                    <code>git clone
-                        https://github.com/kuis-tech/quiz-app.git</code>
-                  </li>
-                  <li>
-                    Arahkan ke Direktori Proyek, apabila menggunakan command
-                    prompt gunakan perintah cd nama-folder.
-                  </li>
-                  <li>copy .env.example ganti nama dengan .env</li>
-                  <li>
-                    Konfigurasi File .env, sesuaikan pengaturan database
-                    seperti nama basis data, nama pengguna, dan kata sandi.
-                  </li>
-                  <li>
-                    Jalankan command <code>composer install</code> dan
-                    <code>npm install</code> untuk menginstal semua dependensi
-                    yang diperlukan.
-                  </li>
-                  <li>
-                    Jalankan command <code>php artisan key:generate</code>
-                  </li>
-
-                  <li>
-                    Siapkan basis data baru yang sesuai dengan nama yang
-                    ditentukan dalam file .env.
-                  </li>
-
-                  <li>Jalankan command <code>php artisan migrate</code></li>
-
-                  <li>
-                    Jalankan perintah <code>php artisan db:seed</code> untuk
-                    input aturan awal.
-                  </li>
-
-                  <li>
-                    Jalankan perintah <code>npm run dev</code> atau
-                    <code>yarn dev.</code>
-                  </li>
-
-                  <li>
-                    Mulai Server Laravel: Luncurkan server dengan
-                    <code>php artisan serve </code> dan akses aplikasi di
-                    http://localhost:8000.
-                  </li>
-
-                  <li>
-                    Silakan masuk dengan nama pengguna dan kata sandi di
-                    UserSeeder.
-                  </li>
-                </ol>
-              </div>
-              <div class="text-description"></div>
-            </div>
+            <section class="apple-doc-card" id="instalasi">
+              <h2>Instalasi Aplikasi</h2>
+              <p>Berikut langkah-langkah untuk menginstal aplikasi Laravel dari GitHub:</p>
+              <ol>
+                <li>
+                  Clone dari repositori:
+                  <pre class="apple-code"><code>git clone https://github.com/kuis-tech/quiz-app.git
+cd quiz-app</code></pre>
+                </li>
+                <li>
+                  Salin file <code>.env.example</code> menjadi <code>.env</code> dan sesuaikan konfigurasi database (nama database, pengguna, dan kata sandi).
+                </li>
+                <li>
+                  Instal semua dependensi backend dan frontend:
+                  <pre class="apple-code"><code>composer install
+npm install</code></pre>
+                </li>
+                <li>
+                  Buat kunci aplikasi dan siapkan database baru sesuai file <code>.env</code>, lalu jalankan migrasi &amp; seeder:
+                  <pre class="apple-code"><code>php artisan key:generate
+php artisan migrate
+php artisan db:seed</code></pre>
+                </li>
+                <li>
+                  Jalankan build frontend dan server lokal:
+                  <pre class="apple-code"><code>npm run dev
+php artisan serve</code></pre>
+                  Akses aplikasi di <code>http://localhost:8000</code> dan masuk menggunakan kredensial dari <code>UserSeeder</code>.
+                </li>
+              </ol>
+            </section>
           </div>
         </div>
       </div>
     </section>
-    <footer-component></footer-component>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+  </main>
+
+  <footer-component></footer-component>
 </body>
 
 </html>
-
-
