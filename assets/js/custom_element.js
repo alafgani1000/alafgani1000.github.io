@@ -159,6 +159,7 @@ class FooterComponent extends HTMLElement {
             <div class="footer-col">
               <h4>Alat Tenggoo</h4>
               <ul role="list">
+                <li><a href="https://app.worktools.my.id/" target="_blank" rel="noopener noreferrer">Work Tools</a></li>
                 <li><a href="https://resumekit.tenggoo.my.id/" target="_blank" rel="noopener noreferrer">ResumeKit</a></li>
                 <li><a href="https://pdftools.tenggoo.my.id/" target="_blank" rel="noopener noreferrer">Tenggoo PDF</a></li>
                 <li><a href="https://scan.tenggoo.my.id/" target="_blank" rel="noopener noreferrer">Tenggoo Scan</a></li>

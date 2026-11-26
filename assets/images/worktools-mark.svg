@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="wt-title wt-desc">
+  <title id="wt-title">Work Tools</title>
+  <desc id="wt-desc">A dark rounded icon with a multi-layered document and cyan-blue accent for Work Tools Super App.</desc>
+  <defs>
+    <linearGradient id="wt-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F2FE"/>
+      <stop offset="100%" stop-color="#0071E3"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0B0B0E"/>
+  <path d="M18 19h19l9 9v21a3 3 0 0 1-3 3H18a3 3 0 0 1-3-3V22a3 3 0 0 1 3-3z" fill="#2C2C34"/>
+  <path d="M21 13h19l9 9v23a3 3 0 0 1-3 3H21a3 3 0 0 1-3-3V16a3 3 0 0 1 3-3z" fill="#FFFFFF"/>
+  <path d="M40 13v7a2 2 0 0 0 2 2h7" fill="none" stroke="url(#wt-accent)" stroke-width="3.5" stroke-linejoin="round"/>
+  <rect x="24" y="26" width="14" height="3.2" rx="1.6" fill="#0071E3"/>
+  <rect x="24" y="33" width="18" height="3" rx="1.5" fill="#1D1D1F"/>
+  <rect x="24" y="39.5" width="11" height="3" rx="1.5" fill="#FF9500"/>
+</svg>

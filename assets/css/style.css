@@ -6816,3 +6816,137 @@ body.work-sans:not(.project-list-page):not(.theme-list-page):not(.tg-blog-index)
     width: auto;
   }
 }
+
+
+/* ============================================================
+   === WORK TOOLS SUPER APP INTEGRATION (v5.2) ===
+   ============================================================ */
+
+.apple-hero-stage {
+  max-width: 960px;
+}
+
+.apple-hero-apps {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.apple-app-tile--work .apple-app-tile__badge {
+  background: linear-gradient(135deg, #00f2fe 0%, #0071e3 100%);
+  color: #03192e;
+}
+
+/* Sculpted Work Tools Super App Stage */
+.apple-worktools-stage {
+  max-width: 780px;
+  margin: 40px auto 0;
+  padding: 24px 26px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.07);
+  text-align: left;
+}
+
+.apple-worktools-stage__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.apple-worktools-stage__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.apple-worktools-stage__brand img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.apple-worktools-stage__brand strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--apple-ink);
+}
+
+.apple-worktools-stage__brand span {
+  display: block;
+  font-size: 12px;
+  color: var(--apple-secondary);
+}
+
+.apple-worktools-modules {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.apple-worktools-module {
+  padding: 14px 12px;
+  border-radius: 14px;
+  background: var(--apple-surface);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.apple-worktools-module__count {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 980px;
+  background: rgba(0, 113, 227, 0.1);
+  color: var(--apple-link);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.apple-worktools-module strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--apple-ink);
+  margin-bottom: 3px;
+}
+
+.apple-worktools-module small {
+  display: block;
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: var(--apple-secondary);
+}
+
+@media (max-width: 1068px) {
+  .apple-hero-apps {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .apple-worktools-modules {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 734px) {
+  .apple-hero-apps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .apple-worktools-modules {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .apple-hero-apps,
+  .apple-worktools-modules {
+    grid-template-columns: 1fr;
+  }
+}
